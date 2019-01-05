@@ -33,14 +33,11 @@ public class UserPermissionLevel {
     private static int inSA(String username){
         try {
             Connection conn= DataSourceConfiguration.getDataSource().getConnection();
-            String sql = "SELECT COUNT(sa_index) FROM SA WHERE s_id = '" + username + "'" ;
-            /*PreparedStatement pstmt = conn.prepareStatement(sql);
+            String sql = "SELECT COUNT(sa_index) FROM SA WHERE s_id = ?" ;
+            PreparedStatement pstmt = conn.prepareStatement(sql);
             pstmt.setString(1, username);
-            ResultSet res = pstmt.executeQuery(sql);
-            */
-            Statement stmt = conn.createStatement();
-            ResultSet resultSet = stmt.executeQuery(sql);
-            System.out.println(sql);
+            ResultSet resultSet = pstmt.executeQuery();
+
             if (resultSet.next()){
                 return resultSet.getInt(1);
             }

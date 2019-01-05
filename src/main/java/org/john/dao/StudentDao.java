@@ -21,9 +21,6 @@ public class StudentDao {
     public static LoginResBean getUserInfo(StudentBean userInfo, String username, String password){
         LoginResBean resBean = new LoginResBean();
 
-
-
-
         if (username == null || "".equals(username)){
             resBean.onFail(400, "用户名不能为空");
         }
@@ -35,7 +32,6 @@ public class StudentDao {
                 Connection conn = null;
                 if ((conn = DataSourceConfiguration.getConnection()) == null){
                     System.out.println("datasource error");
-
                 }
 
                 String sql = "SELECT s_name, password, nickname, sex, c_name FROM STU, COLLEGE WHERE STU.s_id = ? and STU.c_id = COLLEGE.c_id";

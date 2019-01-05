@@ -23,7 +23,7 @@ public class LogoutServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) {
-        response.setContentType("text/json;charset=utf-8");
+        response.setContentType("application/json;charset=utf-8");
 
         StudentBean userInfo =  (StudentBean)request.getSession().getAttribute("userInfo");
         LogoutBean res = new LogoutBean();

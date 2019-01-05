@@ -15,15 +15,18 @@ public class IndexInitBean {
     /**描述信息
     */
     private String info;
+    //权限代码
+    private int permission;
 
     /** 快捷状态设置
     */
     public void onNotLogin(){
         this.setStatus(403);
-        this.setInfo(Latin2utf8.transform("没有的登陆"));
+        this.setInfo("没有的登陆");
         setUserType(0);
         setCollege("");
-        setName(Latin2utf8.transform("路人甲"));
+        setName("路人甲");
+        setPermission(0);
     }
     public void onPassed(){
         this.setStatus(200);
@@ -57,8 +60,14 @@ public class IndexInitBean {
     * */
     public void setUserType(int userType) {
         String []userTypes = {"学生", "助理", "负责人", "超级管理员"};
-        this.userType = Latin2utf8.transform(userTypes[userType]);
+        //System.out.println("Debug permission = 0, index bean");
+        this.setPermission(userType);
+        this.userType = (userTypes[userType]);
 
+    }
+
+    public void setPermission(int permission) {
+        this.permission = permission;
     }
 
     public void setName(String name) {
@@ -95,5 +104,9 @@ public class IndexInitBean {
 
     public String getName() {
         return name;
+    }
+
+    public int getPermission() {
+        return permission;
     }
 }
