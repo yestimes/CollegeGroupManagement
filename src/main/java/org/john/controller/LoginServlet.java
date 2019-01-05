@@ -29,7 +29,7 @@ public class LoginServlet extends HttpServlet {
         StudentBean stuBean = new StudentBean();
         LoginResBean resBean = StudentDao.getUserInfo(stuBean, username, password);
 
-        response.setContentType("text/json;charset=utf-8");
+        response.setContentType("application/json;charset=utf-8");
 
         try {
             JsonUtils.sendJsonBack(response.getWriter(), resBean);

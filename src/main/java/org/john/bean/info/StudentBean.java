@@ -71,7 +71,6 @@ public class StudentBean {
     }
 
     public void setUserType(int userType) {
-        System.out.println("bean set");
         this.userType = userType;
     }
 }

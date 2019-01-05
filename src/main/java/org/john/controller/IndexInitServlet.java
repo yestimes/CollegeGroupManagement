@@ -18,7 +18,7 @@ public class IndexInitServlet extends HttpServlet {
     }
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) {
-        response.setContentType("text/json;charset=utf-8");
+        response.setContentType("application/json;charset=utf-8");
         StudentBean userInfo = (StudentBean) request.getSession().getAttribute("userInfo");
         //获取不到信息代表没有登陆
         IndexInitBean res = new IndexInitBean();
