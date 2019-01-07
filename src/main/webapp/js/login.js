@@ -14,7 +14,6 @@ function login() {
             else {
                 alert(result.info);
             }
-
         },
         error : function(res) {
             console.log(res)
@@ -22,3 +21,4 @@ function login() {
         }
     });
 }
+

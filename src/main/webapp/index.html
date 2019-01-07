@@ -17,7 +17,7 @@
   <!-- endinject -->
   <link rel="shortcut icon" href="images/favicon.png" />
   <!--JS LIBRARY-->
-  <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+  <script src="./vendor/jquery/jquery.js"></script>
   <script src="./js/index.js">
   </script>
 </head>
@@ -63,7 +63,7 @@
                 <i class="mdi mdi-logout mr-2 text-primary"></i>
                 退出登陆
               </a>
-            
+
             </div>
           </li>
           <li class="nav-item d-none d-lg-block full-screen-link">
@@ -242,28 +242,19 @@
               <i class="mdi mdi-chart-bar menu-icon"></i>
             </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" id="group-manager-box">
             <a class="nav-link" href="pages/tables/basic-table.html">
               <span class="menu-title">社团管理中心</span>
               <i class="mdi mdi-table-large menu-icon"></i>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#general-pages" aria-expanded="false" aria-controls="general-pages">
+          <li class="nav-item" id="control-box">
+            <a class="nav-link"  href="/admin/index.html">
               <span class="menu-title">控制面板</span>
-              <i class="menu-arrow"></i>
               <i class="mdi mdi-medical-bag menu-icon"></i>
             </a>
-            <div class="collapse" id="general-pages">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/blank-page.html">社团管理</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html">人员管理</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Register </a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> 404 </a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> 500 </a></li>
-              </ul>
-              </div>
           </li>
+
           <li class="nav-item sidebar-actions">
             <span class="nav-link">
               <div class="border-bottom">
