@@ -14,7 +14,11 @@
 	<link rel="stylesheet" href="css/main.css">
 	<!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
 	<link rel="stylesheet" href="css/demo.css">
-	<!-- GOOGLE FONTS -->
+	<!-- Javascript -->
+	<script src="vendor/jquery/jquery.min.js"></script>s
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+	<script src="js/klorofil-common.js"></script>
 	<!-- ICONS -->
 	<link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon.png">
 	<link rel="icon" type="image/png" sizes="96x96" href="img/favicon.png">
@@ -38,9 +42,7 @@
 						<span class="input-group-btn"><button type="button" class="btn btn-primary">Go</button></span>
 					</div>
 				</form>
-				<div class="navbar-btn navbar-btn-right">
-					<a class="btn btn-success update-pro" href="#downloads/klorofil-pro-bootstrap-admin-dashboard-template/?utm_source=klorofil&utm_medium=template&utm_campaign=KlorofilPro" title="Upgrade to Pro" target="_blank"><i class="fa fa-rocket"></i> <span>UPGRADE TO PRO</span></a>
-				</div>
+
 				<div id="navbar-menu">
 					<ul class="nav navbar-nav navbar-right">
 						<li class="dropdown">
@@ -84,18 +86,28 @@
 		</nav>
 		<!-- END NAVBAR -->
 		<!-- LEFT SIDEBAR -->
+		<!-- LEFT SIDEBAR -->
 		<div id="sidebar-nav" class="sidebar">
 			<div class="sidebar-scroll">
 				<nav>
 					<ul class="nav">
-						<li><a href="index.html" class=""><i class="lnr lnr-home"></i> <span>Dashboard</span></a></li>
-						<li><a href="elements.html" class=""><i class="lnr lnr-code"></i> <span>Elements</span></a></li>
-						<li><a href="charts.html" class=""><i class="lnr lnr-chart-bars"></i> <span>Charts</span></a></li>
-						<li><a href="panels.html" class=""><i class="lnr lnr-cog"></i> <span>Panels</span></a></li>
+						<li><a href="index.html" class=""><i class="lnr lnr-home"></i> <span>仪表盘</span></a></li>
+						<li>
+							<a href="#subPages0" data-toggle="collapse" class="collapsed"><i class="lnr lnr-file-empty"></i> <span>社团事务中心</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+							<div id="subPages0" class="collapse ">
+								<ul class="nav">
+									<li><a href="group-list.html" title="增加社团" target="_blank"><i class="fa fa-rocket"></i> <span>增加社团</span></a></li>
+									<li><a href="group-list.html" title="删除社团" target="_blank"><i class="fa fa-rocket"></i> <span>删除社团</span></a></li>
+
+								</ul>
+							</div>
+						</li>
+						<li><a href="charts.html" class=""><i class="lnr lnr-chart-bars"></i> <span>社团资料</span></a></li>
+						<li><a href="panels.html" class=""><i class="lnr lnr-cog"></i> <span>组织架构</span></a></li>
 						<li><a href="notifications.html" class=""><i class="lnr lnr-alarm"></i> <span>Notifications</span></a></li>
 						<li>
-							<a href="#subPages" data-toggle="collapse" class="collapsed"><i class="lnr lnr-file-empty"></i> <span>Pages</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
-							<div id="subPages" class="collapse ">
+							<a href="#subPages1" data-toggle="collapse" class="collapsed"><i class="lnr lnr-file-empty"></i> <span>Pages</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+							<div id="subPages1" class="collapse ">
 								<ul class="nav">
 									<li><a href="page-profile.html" class="">Profile</a></li>
 									<li><a href="page-login.html" class="">Login</a></li>
@@ -105,7 +117,7 @@
 						</li>
 						<li><a href="tables.html" class=""><i class="lnr lnr-dice"></i> <span>Tables</span></a></li>
 						<li><a href="typography.html" class=""><i class="lnr lnr-text-format"></i> <span>Typography</span></a></li>
-						<li><a href="icons.html" class="active"><i class="lnr lnr-linearicons"></i> <span>Icons</span></a></li>
+
 					</ul>
 				</nav>
 			</div>
@@ -116,12 +128,13 @@
 			<!-- MAIN CONTENT -->
 			<div class="main-content">
 				<div class="container-fluid">
-					<h3 class="page-title">Icons</h3>
+
 					<div class="panel panel-headline demo-icons">
 						<div class="panel-heading">
-							<h3 class="panel-title">Linearicons</h3>
-							<p class="subtitle">For complete list, please visit <a href="https://linearicons.com/free" target="_blank">https://linearicons.com/free</a></p>
+							<h3 class="panel-title">社团列表</h3>
 						</div>
+
+
 						<div class="panel-body">
 							<ul class="list-unstyled row">
 								<li class="col-md-2 col-sm-4 col-xs-6">
@@ -258,11 +271,7 @@
 		</footer>
 	</div>
 	<!-- END WRAPPER -->
-	<!-- Javascript -->
-	<script src="vendor/jquery/jquery.min.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-	<script src="vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-	<script src="scripts/klorofil-common.js"></script>
+t>
 </body>
 
 </html>

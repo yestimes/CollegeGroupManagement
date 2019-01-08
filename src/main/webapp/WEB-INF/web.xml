@@ -8,26 +8,7 @@
     <welcome-file-list>
         <welcome-file>login.html</welcome-file>
     </welcome-file-list>
-    
-    <servlet>
-        <servlet-name>loginClass</servlet-name>
-        <servlet-class>org.john.controller.LoginServlet</servlet-class>
-    </servlet>
-    
-    <servlet>
-        <servlet-name>IndexInit</servlet-name>
-        <servlet-class>org.john.controller.IndexInitServlet</servlet-class>
-    </servlet>
-    
-    <servlet-mapping>
-        <servlet-name>loginClass</servlet-name>
-        <url-pattern>/userLogin</url-pattern>
-    </servlet-mapping>
 
-    <servlet-mapping>
-        <servlet-name>IndexInit</servlet-name>
-        <url-pattern>/getIndexInitInfo</url-pattern>
-    </servlet-mapping>
 
 
 </web-app>

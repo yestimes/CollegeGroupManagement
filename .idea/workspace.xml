@@ -6,123 +6,177 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99bbc54b-faf5-46b0-a1e7-2bd94ee61921" name="Default" comment="Add logout statement, &#10;prepared some distinct menu for users">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="99bbc54b-faf5-46b0-a1e7-2bd94ee61921" name="Default" comment="add control pane of sa, add group main page">
+      <change afterPath="$PROJECT_DIR$/src/main/java/bean/info/OrganizationBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/GroupServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/OrgaGetServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/OrgaSetServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/OrganizationDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/group-add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/group-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/js/group_init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/css/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/css/bootsnav.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/css/datepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/css/hover-min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/css/jquery-ui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/css/owl.carousel.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/css/owl.theme.default.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/css/responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/images/blog/b1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/images/blog/b2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/images/blog/b3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/images/client/testimonial1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/images/client/testimonial2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/images/gallary/g1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/images/gallary/g2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/images/gallary/g3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/images/gallary/g4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/images/gallary/g5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/images/gallary/g6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/images/home/banner.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/images/home/fastive-image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/images/home/offer-timer.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/images/home/subscribe-banner.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/images/icons/lsxh.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/images/offer/offer-banner.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/images/offer/offer-shape.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/images/packages/p1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/images/packages/p2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/images/packages/p3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/images/packages/p4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/images/packages/p5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/images/packages/p6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/images/service/s1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/images/service/s1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/images/service/s2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/images/service/s3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/js/init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/lib/bootsnav.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/lib/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/lib/custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/lib/datepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/lib/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/lib/jquery.counterup.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/lib/jquery.filterizr.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/lib/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/lib/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/lib/jquery.sticky.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/lib/owl.carousel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/lib/waypoints.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/logo/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendors/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendors/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendors/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendors/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendors/css/vendor.bundle.base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendors/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendors/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendors/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendors/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendors/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendors/iconfonts/mdi/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendors/iconfonts/mdi/bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendors/iconfonts/mdi/css/materialdesignicons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendors/iconfonts/mdi/css/materialdesignicons.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendors/iconfonts/mdi/css/materialdesignicons.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendors/iconfonts/mdi/css/materialdesignicons.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendors/iconfonts/mdi/fonts/materialdesignicons-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendors/iconfonts/mdi/fonts/materialdesignicons-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendors/iconfonts/mdi/fonts/materialdesignicons-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendors/iconfonts/mdi/fonts/materialdesignicons-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendors/iconfonts/mdi/fonts/materialdesignicons-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendors/iconfonts/mdi/license.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendors/iconfonts/mdi/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendors/iconfonts/mdi/preview.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendors/iconfonts/mdi/scss/_animated.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendors/iconfonts/mdi/scss/_core.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendors/iconfonts/mdi/scss/_extras.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendors/iconfonts/mdi/scss/_functions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendors/iconfonts/mdi/scss/_icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendors/iconfonts/mdi/scss/_path.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendors/iconfonts/mdi/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendors/iconfonts/mdi/scss/materialdesignicons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendors/js/vendor.bundle.addons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/vendors/js/vendor.bundle.base.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/762ade30-15c0-4009-a74d-c8168df1c0f4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/762ade30-15c0-4009-a74d-c8168df1c0f4.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/john/bean/info/StudentBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/john/bean/result/IndexInitBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/john/bean/result/LoginResBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/john/bean/result/LogoutBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/john/config/dao/DataSourceConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/john/controller/IndexInitServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/john/controller/LoginServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/john/controller/LogoutServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/john/dao/JsonUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/john/dao/StudentDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/john/dao/UserPermissionLevel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/john/utils/Latin2utf8.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/Ubuntu/Ubuntu-Bold.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/Ubuntu/Ubuntu-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/Ubuntu/Ubuntu-Bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/Ubuntu/Ubuntu-Bold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/Ubuntu/Ubuntu-Light.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/Ubuntu/Ubuntu-Light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/Ubuntu/Ubuntu-Light.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/Ubuntu/Ubuntu-Light.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/Ubuntu/Ubuntu-Medium.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/Ubuntu/Ubuntu-Medium.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/Ubuntu/Ubuntu-Medium.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/Ubuntu/Ubuntu-Medium.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/Ubuntu/Ubuntu-Regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/Ubuntu/Ubuntu-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/Ubuntu/Ubuntu-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/fonts/Ubuntu/Ubuntu-Regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/IndexInitServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/IndexInitServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/LogoutServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/UserPermissionLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UserPermissionLevel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/elements.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/elements.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/groups.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/groups.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/group/assets/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/group/assets/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/group/assets/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/group/assets/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/group/assets/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/group/assets/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/group/assets/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/group/assets/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/group/assets/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scripts/klorofil-common.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scss/_background.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scss/_demo.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scss/_fonts.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scss/_footer.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scss/_functions.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scss/_misc.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scss/_navbar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scss/_reset.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scss/_sidebar.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scss/_typography.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scss/_utilities.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scss/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scss/components/_badges.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scss/components/_bootstrap-progress.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scss/components/_buttons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scss/components/_cards.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scss/components/_checkbox-radio.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scss/components/_dropdown.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scss/components/_forms.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scss/components/_icons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scss/components/_lists.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scss/components/_preview.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scss/components/_tables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scss/landing-screens/_auth.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scss/mixins/_animation.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scss/mixins/_background.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scss/mixins/_badges.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scss/mixins/_blockqoute.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scss/mixins/_buttons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scss/mixins/_cards.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scss/mixins/_misc.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/scss/style.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendors/css/vendor.bundle.base.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendors/iconfonts/mdi/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendors/iconfonts/mdi/bower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendors/iconfonts/mdi/css/materialdesignicons.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendors/iconfonts/mdi/css/materialdesignicons.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendors/iconfonts/mdi/css/materialdesignicons.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendors/iconfonts/mdi/css/materialdesignicons.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendors/iconfonts/mdi/fonts/materialdesignicons-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendors/iconfonts/mdi/fonts/materialdesignicons-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendors/iconfonts/mdi/fonts/materialdesignicons-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendors/iconfonts/mdi/fonts/materialdesignicons-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendors/iconfonts/mdi/fonts/materialdesignicons-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendors/iconfonts/mdi/license.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendors/iconfonts/mdi/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendors/iconfonts/mdi/preview.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendors/iconfonts/mdi/scss/_animated.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendors/iconfonts/mdi/scss/_core.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendors/iconfonts/mdi/scss/_extras.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendors/iconfonts/mdi/scss/_functions.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendors/iconfonts/mdi/scss/_icons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendors/iconfonts/mdi/scss/_path.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendors/iconfonts/mdi/scss/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendors/iconfonts/mdi/scss/materialdesignicons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendors/js/vendor.bundle.addons.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendors/js/vendor.bundle.base.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/john/bean/info/StudentBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/john/bean/info/StudentBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/john/bean/result/IndexInitBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/john/bean/result/IndexInitBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/john/bean/result/LoginResBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/john/bean/result/LoginResBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/john/config/dao/DataSourceConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/john/config/dao/DataSourceConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/john/controller/IndexInitServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/john/controller/IndexInitServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/john/controller/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/john/controller/LoginServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/john/controller/LogoutServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/john/controller/LogoutServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/john/dao/StudentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/john/dao/StudentDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/john/dao/UserPermissionLevel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/john/dao/UserPermissionLevel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/loginServer/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/loginServer/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/loginServer/WEB-INF/classes/org/john/bean/info/StudentBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/loginServer/WEB-INF/classes/org/john/bean/info/StudentBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/loginServer/WEB-INF/classes/org/john/bean/result/IndexInitBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/loginServer/WEB-INF/classes/org/john/bean/result/IndexInitBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/loginServer/WEB-INF/classes/org/john/bean/result/LoginResBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/loginServer/WEB-INF/classes/org/john/bean/result/LoginResBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/loginServer/WEB-INF/classes/org/john/config/dao/DataSourceConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/loginServer/WEB-INF/classes/org/john/config/dao/DataSourceConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/loginServer/WEB-INF/classes/org/john/controller/IndexInitServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/loginServer/WEB-INF/classes/org/john/controller/IndexInitServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/loginServer/WEB-INF/classes/org/john/controller/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/loginServer/WEB-INF/classes/org/john/controller/LoginServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/loginServer/WEB-INF/classes/org/john/controller/LogoutServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/loginServer/WEB-INF/classes/org/john/controller/LogoutServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/loginServer/WEB-INF/classes/org/john/dao/StudentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/loginServer/WEB-INF/classes/org/john/dao/StudentDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/loginServer/WEB-INF/classes/org/john/dao/UserPermissionLevel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/loginServer/WEB-INF/classes/org/john/dao/UserPermissionLevel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/loginServer/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/loginServer/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/loginServer/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/loginServer/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/loginServer/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/loginServer/js/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/loginServer/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/loginServer/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendor/bootstrap/css/bootstrap-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vendors/bootstrap/css/bootstrap-theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendor/bootstrap/css/bootstrap-theme.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vendors/bootstrap/css/bootstrap-theme.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendor/bootstrap/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vendors/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendor/bootstrap/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vendors/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vendors/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendor/bootstrap/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vendors/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendor/bootstrap/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vendors/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendor/bootstrap/js/npm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vendors/bootstrap/js/npm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendor/chartist/css/chartist-custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vendors/chartist/css/chartist-custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendor/chartist/css/chartist-custom.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vendors/chartist/css/chartist-custom.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendor/chartist/css/chartist.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vendors/chartist/css/chartist.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendor/chartist/css/chartist.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vendors/chartist/css/chartist.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendor/chartist/js/chartist.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vendors/chartist/js/chartist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendor/chartist/js/chartist.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vendors/chartist/js/chartist.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendor/chartist/map/chartist.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vendors/chartist/map/chartist.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendor/chartist/map/chartist.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vendors/chartist/map/chartist.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendor/chartist/scss/chartist.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vendors/chartist/scss/chartist.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendor/font-awesome/css/font-awesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vendors/font-awesome/css/font-awesome.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendor/font-awesome/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vendors/font-awesome/css/font-awesome.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendor/font-awesome/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vendors/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-slimscroll/jquery.slimscroll.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vendors/jquery-slimscroll/jquery.slimscroll.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendor/jquery-slimscroll/jquery.slimscroll.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vendors/jquery-slimscroll/jquery.slimscroll.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendor/jquery.easy-pie-chart/angular.easypiechart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vendors/jquery.easy-pie-chart/angular.easypiechart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendor/jquery.easy-pie-chart/angular.easypiechart.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vendors/jquery.easy-pie-chart/angular.easypiechart.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendor/jquery.easy-pie-chart/easypiechart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vendors/jquery.easy-pie-chart/easypiechart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendor/jquery.easy-pie-chart/easypiechart.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vendors/jquery.easy-pie-chart/easypiechart.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendor/jquery.easy-pie-chart/jquery.easypiechart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vendors/jquery.easy-pie-chart/jquery.easypiechart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vendors/jquery.easy-pie-chart/jquery.easypiechart.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendor/jquery/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vendors/jquery/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendor/jquery/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vendors/jquery/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendor/jquery/jquery.min.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vendors/jquery/jquery.min.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendor/linearicons/fonts/Linearicons-Free.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vendors/linearicons/fonts/Linearicons-Free.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendor/linearicons/fonts/Linearicons-Free.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vendors/linearicons/fonts/Linearicons-Free.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendor/linearicons/fonts/Linearicons-Free.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vendors/linearicons/fonts/Linearicons-Free.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendor/linearicons/fonts/Linearicons-Free.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vendors/linearicons/fonts/Linearicons-Free.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendor/linearicons/fonts/Linearicons-Free.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vendors/linearicons/fonts/Linearicons-Free.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendor/linearicons/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vendors/linearicons/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendor/toastr/toastr.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vendors/toastr/toastr.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendor/toastr/toastr.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vendors/toastr/toastr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendor/toastr/toastr.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vendors/toastr/toastr.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/vendor/toastr/toastr.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/vendors/toastr/toastr.min.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -167,14 +221,21 @@
         <item name="localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="group_db: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="ASSISTANT: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="groupmanager: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="group_db: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="SA: table" type="285a2a93:MysqlImplModel$Table" />
+        <item name="sa: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="group_db: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="stu: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -182,49 +243,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/bean/result/IndexInitBean.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/GroupServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-300">
-              <caret line="44" column="32" lean-forward="true" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
+            <state relative-caret-position="32">
+              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/bean/result/LoginResBean.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/OrgaGetServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-455">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/bean/result/LogoutBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/config/dao/DataSourceConfiguration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-160">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/IndexInitServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="24" column="12" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+            <state relative-caret-position="240">
+              <caret line="15" column="63" selection-start-line="15" selection-start-column="63" selection-end-line="15" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -233,10 +264,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/LoginServlet.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="42" column="14" lean-forward="true" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
+            <state relative-caret-position="144">
+              <caret line="9" column="56" lean-forward="true" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://762ade30-15c0-4009-a74d-c8168df1c0f4/schema/group_db/table/groupmanager">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/OrgaSetServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -245,34 +294,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/LogoutServlet.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/bean/info/OrganizationBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="224">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dao/JsonUtils.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dao/OrganizationDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-204">
-              <caret column="8" selection-start-column="8" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dao/StudentDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="496">
+              <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -283,8 +317,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dao/UserPermissionLevel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="36" column="25" lean-forward="true" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+            <state relative-caret-position="384">
+              <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -317,7 +351,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/org/john/controller/GetIndexInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/john/dao/DuplicateJson.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/john/dao/SendJson.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/index_init.js" />
@@ -332,7 +365,6 @@
         <option value="$PROJECT_DIR$/src/main/java/org/john/controller/LogoutServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/john/dao/StudentDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/john/dao/UserPermissionLevel.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/762ade30-15c0-4009-a74d-c8168df1c0f4/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/org/john/bean/result/IndexInitBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/john/controller/LoginServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/john/bean/result/LoginResBean.java" />
@@ -343,12 +375,20 @@
         <option value="$PROJECT_DIR$/src/main/java/bean/result/LoginResBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/bean/result/LogoutBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/config/dao/DataSourceConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/IndexInitServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/LogoutServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/JsonUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/StudentDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/UserPermissionLevel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/LogoutServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/IndexInitServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/LoginServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/bean/info/OrganizationBean.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/762ade30-15c0-4009-a74d-c8168df1c0f4/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/OrganizationDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/OrgaSetServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/UserPermissionLevel.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/OrgaGetServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/login.html" />
       </list>
     </option>
   </component>
@@ -380,8 +420,8 @@
   <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-14" />
     <option name="y" value="-14" />
-    <option name="width" value="2510" />
-    <option name="height" value="1726" />
+    <option name="width" value="2517" />
+    <option name="height" value="1733" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -415,66 +455,15 @@
               <item name="loginServer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="webapp" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="day0101_loginServer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="loginServer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="bean" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="day0101_loginServer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="loginServer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="bean" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="info" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="day0101_loginServer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="loginServer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="bean" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="result" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="day0101_loginServer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="loginServer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="config" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="day0101_loginServer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="loginServer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="config" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="dao" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="day0101_loginServer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="loginServer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="controller" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="day0101_loginServer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="loginServer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="dao" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="webapp" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="vendors" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -497,8 +486,16 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\John\source\ideaProject\day0101_loginServer\src\main\webapp\vendors" />
       <recent name="C:\Users\John\source\ideaProject\day0101_loginServer\src\main\webapp" />
       <recent name="C:\Users\John\source\ideaProject\day0101_loginServer\src\main\java\org\john" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\John\source\ideaProject\day0101_loginServer\src\main\webapp" />
+      <recent name="C:\Users\John\source\ideaProject\day0101_loginServer\src\main\webapp\group" />
+      <recent name="C:\Users\John\source\ideaProject\day0101_loginServer\src\main\java\dao" />
+      <recent name="C:\Users\John\source\ideaProject\day0101_loginServer\src\main\java\bean\info" />
+      <recent name="C:\Users\John\source\ideaProject\day0101_loginServer\src\main\java\controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -630,7 +627,11 @@
       <workItem from="1546819525751" duration="1053000" />
       <workItem from="1546821526114" duration="780000" />
       <workItem from="1546822410140" duration="926000" />
-      <workItem from="1546824203376" duration="4404000" />
+      <workItem from="1546824203376" duration="6112000" />
+      <workItem from="1546855850413" duration="816000" />
+      <workItem from="1546856927180" duration="64000" />
+      <workItem from="1546858279063" duration="12474000" />
+      <workItem from="1546926388893" duration="1738000" />
     </task>
     <task id="LOCAL-00001" summary="First commit complete project">
       <created>1546506801642</created>
@@ -660,45 +661,52 @@
       <option name="project" value="LOCAL" />
       <updated>1546695464487</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="delete personal package path, and add logout, etc">
+      <created>1546830355416</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1546830355416</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64354000" />
+    <option name="totallyTimeSpent" value="81154000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1577" height="1026" extended-state="6" />
+    <frame x="-7" y="-7" width="1577" height="1026" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Web" order="0" side_tool="true" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.2738017" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.19632305" />
       <window_info id="Designer" order="3" />
       <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="1" weight="0.32997763" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.32997763" />
+      <window_info anchor="bottom" id="Messages" order="1" weight="0.32963374" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.32963374" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="4" weight="0.32997763" />
       <window_info anchor="bottom" id="Application Servers" order="5" weight="0.32997763" />
       <window_info anchor="bottom" id="Java Enterprise" order="6" weight="0.32963374" />
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" />
-      <window_info anchor="bottom" id="Run" order="9" visible="true" weight="0.32963374" />
+      <window_info active="true" anchor="bottom" id="Run" order="9" visible="true" weight="0.32963374" />
       <window_info anchor="bottom" id="Debug" order="10" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="13" />
-      <window_info anchor="bottom" id="Database Console" order="14" weight="0.32997763" />
+      <window_info anchor="bottom" id="Database Console" order="14" weight="0.32963374" />
       <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
-      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.2757715" />
-      <window_info anchor="right" id="Database" order="0" weight="0.21930401" />
+      <window_info anchor="right" id="Database" order="0" visible="true" weight="0.21930401" />
       <window_info anchor="right" id="Maven Projects" order="1" weight="0.3296126" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="right" id="Ant Build" order="4" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="5" weight="0.25" />
       <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Coverage" order="7" side_tool="true" weight="0.2757715" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -707,10 +715,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit complete project" />
     <MESSAGE value="Add logout statement, &#10;prepared some distinct menu for users" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add logout statement, &#10;prepared some distinct menu for users" />
+    <MESSAGE value="delete personal package path, and add logout, etc" />
+    <MESSAGE value="add control pane of sa, add group main page" />
+    <option name="LAST_COMMIT_MESSAGE" value="add control pane of sa, add group main page" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/john/controller/GetIndexInfo.java" />
     <entry file="das://762ade30-15c0-4009-a74d-c8168df1c0f4/schema/group_db/table/SA">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -720,13 +729,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/file-upload.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="47" lean-forward="true" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/john/dao/DuplicateJson.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/org/john/dao/SendJson.java" />
@@ -746,77 +748,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/john/utils/Latin2utf8.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="752">
-          <caret line="47" column="65" selection-start-line="47" selection-start-column="65" selection-end-line="47" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/john/bean/result/LogoutBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/john/dao/JsonUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/762ade30-15c0-4009-a74d-c8168df1c0f4/console.sql" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/john/dao/UserPermissionLevel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1392">
-          <caret line="92" column="29" selection-start-line="92" selection-start-column="29" selection-end-line="92" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/john/controller/IndexInitServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="21" column="82" selection-start-line="21" selection-start-column="82" selection-end-line="21" selection-end-column="82" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/john/bean/info/StudentBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#579#580#0" expanded="true" />
-            <element signature="e#609#610#0" expanded="true" />
-            <element signature="e#1138#1139#0" expanded="true" />
-            <element signature="e#1176#1177#0" expanded="true" />
-            <element signature="e#1289#1290#0" expanded="true" />
-            <element signature="e#1329#1330#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/john/utils/Latin2utf8.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/john/bean/result/LogoutBean.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/john/dao/JsonUtils.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/john/dao/UserPermissionLevel.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/john/controller/IndexInitServlet.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/john/bean/info/StudentBean.java" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
@@ -824,16 +761,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/john/dao/StudentDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/john/dao/StudentDao.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -841,71 +769,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/john/config/dao/DataSourceConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" column="132" selection-start-line="19" selection-start-column="132" selection-end-line="19" selection-end-column="132" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/john/bean/result/IndexInitBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-16">
-          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/john/bean/result/LoginResBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/john/controller/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="45" column="16" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/john/controller/LogoutServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bean/info/StudentBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bean/result/IndexInitBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-300">
-          <caret line="44" column="32" lean-forward="true" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/john/config/dao/DataSourceConfiguration.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/john/bean/result/IndexInitBean.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/john/bean/result/LoginResBean.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/john/controller/LoginServlet.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/john/controller/LogoutServlet.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/bean/result/LoginResBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-455">
@@ -916,14 +784,14 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/bean/result/LogoutBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
-          <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/config/dao/DataSourceConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-160">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="80">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -932,18 +800,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/IndexInitServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="24" column="12" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+        <state relative-caret-position="112">
+          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/LogoutServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="29" column="36" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+        <state relative-caret-position="112">
+          <caret line="16" selection-start-line="16" selection-end-line="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -952,7 +834,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/JsonUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204">
+        <state>
           <caret column="8" selection-start-column="8" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -962,8 +844,119 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/StudentDao.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="50" column="50" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bean/info/StudentBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bean/result/IndexInitBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="668">
+          <caret line="99" selection-start-line="99" selection-end-line="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-160">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="17" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/group/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/group/assets/js/custom.js" />
+    <entry file="das://762ade30-15c0-4009-a74d-c8168df1c0f4/schema/group_db/table/college">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/762ade30-15c0-4009-a74d-c8168df1c0f4/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="140" selection-start-column="140" selection-end-column="140" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://762ade30-15c0-4009-a74d-c8168df1c0f4/schema/group_db/table/stu">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://762ade30-15c0-4009-a74d-c8168df1c0f4/schema/group_db/table/sa">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://762ade30-15c0-4009-a74d-c8168df1c0f4/schema/group_db/table/organization">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/GroupServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://762ade30-15c0-4009-a74d-c8168df1c0f4/schema/group_db/table/groupmanager">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/OrgaSetServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bean/info/OrganizationBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/OrganizationDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -972,21 +965,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/UserPermissionLevel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="36" column="25" lean-forward="true" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+        <state relative-caret-position="384">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/LoginServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/vendors/js/vendor.bundle.base.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/OrgaGetServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="42" column="14" lean-forward="true" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
+        <state relative-caret-position="240">
+          <caret line="15" column="63" selection-start-line="15" selection-start-column="63" selection-end-line="15" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="56" lean-forward="true" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
         </state>
       </provider>
     </entry>

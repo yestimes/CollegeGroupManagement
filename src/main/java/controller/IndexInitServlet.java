@@ -3,12 +3,18 @@ package controller;
 
 import bean.info.StudentBean;
 import bean.result.IndexInitBean;
-import org.john.dao.JsonUtils;
+import dao.JsonUtils;
 
+import javax.jws.WebService;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+
+
+
+@WebServlet(value = {"/getIndexInitInfo"})
 
 public class IndexInitServlet extends HttpServlet {
 

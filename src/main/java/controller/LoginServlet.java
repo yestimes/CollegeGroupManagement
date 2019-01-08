@@ -8,12 +8,14 @@ import dao.JsonUtils;
 import dao.StudentDao;
 import dao.UserPermissionLevel;
 
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 
+@WebServlet(value = {"/userLogin"})
 
 public class LoginServlet extends HttpServlet {
 
@@ -51,10 +53,6 @@ public class LoginServlet extends HttpServlet {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
-
-
 
 
     }

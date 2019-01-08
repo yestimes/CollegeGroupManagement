@@ -52,7 +52,7 @@ public class UserPermissionLevel {
     private static int inGroupManager(String username){
         try {
             Connection conn= DataSourceConfiguration.getDataSource().getConnection();
-            String sql = "SELECT COUNT(gm_index) FROM GROUPMANAGER WHERE s_id = ?";
+            String sql = "SELECT COUNT(*) FROM GROUPMANAGER WHERE s_id = ?";
             PreparedStatement pstmt = conn.prepareStatement(sql);
             pstmt.setString(1, username);
 
@@ -71,7 +71,7 @@ public class UserPermissionLevel {
     private static int inGroupAssistant(String username){
         try {
             Connection conn= DataSourceConfiguration.getDataSource().getConnection();
-            String sql = "SELECT COUNT(as_index) FROM ASSISTANT WHERE s_id = ?";
+            String sql = "SELECT COUNT(*) FROM ASSISTANT WHERE s_id = ?";
             PreparedStatement pstmt = conn.prepareStatement(sql);
             pstmt.setString(1, username);
 
@@ -91,7 +91,7 @@ public class UserPermissionLevel {
     private static int inGroupMember(String username){
         try {
             Connection conn= DataSourceConfiguration.getDataSource().getConnection();
-            String sql = "SELECT COUNT(me_index) FROM MEMBER WHERE s_id = ?";
+            String sql = "SELECT COUNT(*) FROM MEMBER WHERE s_id = ?";
             PreparedStatement pstmt = conn.prepareStatement(sql);
             pstmt.setString(1, username);
 

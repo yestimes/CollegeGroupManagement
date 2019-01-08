@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="localhost">
-  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.9">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.14">
     <root id="1">
-      <ServerVersion>5.7.24</ServerVersion>
+      <ServerVersion>8.0.13</ServerVersion>
       <DefaultEngine>InnoDB</DefaultEngine>
       <DefaultTmpEngine>InnoDB</DefaultTmpEngine>
-      <DefaultCasing>exact</DefaultCasing>
+      <DefaultCasing>lower/lower</DefaultCasing>
     </root>
     <schema id="2" parent="1" name="group_db">
       <Current>1</Current>
       <Visible>1</Visible>
-      <Collation>utf8_general_ci</Collation>
+      <Collation>utf8mb4_0900_ai_ci</Collation>
     </schema>
     <schema id="3" parent="1" name="information_schema">
       <Collation>utf8_general_ci</Collation>
@@ -783,604 +783,814 @@
       <Charset>utf8</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <collation id="196" parent="1" name="utf8_turkish_ci">
+    <collation id="196" parent="1" name="utf8_tolower_ci">
       <Charset>utf8</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <collation id="197" parent="1" name="utf8_unicode_520_ci">
+    <collation id="197" parent="1" name="utf8_turkish_ci">
       <Charset>utf8</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <collation id="198" parent="1" name="utf8_unicode_ci">
+    <collation id="198" parent="1" name="utf8_unicode_520_ci">
       <Charset>utf8</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <collation id="199" parent="1" name="utf8_vietnamese_ci">
+    <collation id="199" parent="1" name="utf8_unicode_ci">
       <Charset>utf8</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <collation id="200" parent="1" name="utf8mb4_bin">
-      <Charset>utf8mb4</Charset>
+    <collation id="200" parent="1" name="utf8_vietnamese_ci">
+      <Charset>utf8</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <collation id="201" parent="1" name="utf8mb4_croatian_ci">
-      <Charset>utf8mb4</Charset>
-      <DefaultForCharset>0</DefaultForCharset>
-    </collation>
-    <collation id="202" parent="1" name="utf8mb4_czech_ci">
-      <Charset>utf8mb4</Charset>
-      <DefaultForCharset>0</DefaultForCharset>
-    </collation>
-    <collation id="203" parent="1" name="utf8mb4_danish_ci">
-      <Charset>utf8mb4</Charset>
-      <DefaultForCharset>0</DefaultForCharset>
-    </collation>
-    <collation id="204" parent="1" name="utf8mb4_esperanto_ci">
-      <Charset>utf8mb4</Charset>
-      <DefaultForCharset>0</DefaultForCharset>
-    </collation>
-    <collation id="205" parent="1" name="utf8mb4_estonian_ci">
-      <Charset>utf8mb4</Charset>
-      <DefaultForCharset>0</DefaultForCharset>
-    </collation>
-    <collation id="206" parent="1" name="utf8mb4_general_ci">
+    <collation id="201" parent="1" name="utf8mb4_0900_ai_ci">
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>1</DefaultForCharset>
     </collation>
-    <collation id="207" parent="1" name="utf8mb4_german2_ci">
+    <collation id="202" parent="1" name="utf8mb4_0900_as_ci">
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <collation id="208" parent="1" name="utf8mb4_hungarian_ci">
+    <collation id="203" parent="1" name="utf8mb4_0900_as_cs">
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <collation id="209" parent="1" name="utf8mb4_icelandic_ci">
+    <collation id="204" parent="1" name="utf8mb4_bin">
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <collation id="210" parent="1" name="utf8mb4_latvian_ci">
+    <collation id="205" parent="1" name="utf8mb4_croatian_ci">
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <collation id="211" parent="1" name="utf8mb4_lithuanian_ci">
+    <collation id="206" parent="1" name="utf8mb4_cs_0900_ai_ci">
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <collation id="212" parent="1" name="utf8mb4_persian_ci">
+    <collation id="207" parent="1" name="utf8mb4_cs_0900_as_cs">
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <collation id="213" parent="1" name="utf8mb4_polish_ci">
+    <collation id="208" parent="1" name="utf8mb4_czech_ci">
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <collation id="214" parent="1" name="utf8mb4_roman_ci">
+    <collation id="209" parent="1" name="utf8mb4_da_0900_ai_ci">
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <collation id="215" parent="1" name="utf8mb4_romanian_ci">
+    <collation id="210" parent="1" name="utf8mb4_da_0900_as_cs">
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <collation id="216" parent="1" name="utf8mb4_sinhala_ci">
+    <collation id="211" parent="1" name="utf8mb4_danish_ci">
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <collation id="217" parent="1" name="utf8mb4_slovak_ci">
+    <collation id="212" parent="1" name="utf8mb4_de_pb_0900_ai_ci">
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <collation id="218" parent="1" name="utf8mb4_slovenian_ci">
+    <collation id="213" parent="1" name="utf8mb4_de_pb_0900_as_cs">
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <collation id="219" parent="1" name="utf8mb4_spanish2_ci">
+    <collation id="214" parent="1" name="utf8mb4_eo_0900_ai_ci">
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <collation id="220" parent="1" name="utf8mb4_spanish_ci">
+    <collation id="215" parent="1" name="utf8mb4_eo_0900_as_cs">
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <collation id="221" parent="1" name="utf8mb4_swedish_ci">
+    <collation id="216" parent="1" name="utf8mb4_es_0900_ai_ci">
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <collation id="222" parent="1" name="utf8mb4_turkish_ci">
+    <collation id="217" parent="1" name="utf8mb4_es_0900_as_cs">
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <collation id="223" parent="1" name="utf8mb4_unicode_520_ci">
+    <collation id="218" parent="1" name="utf8mb4_es_trad_0900_ai_ci">
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <collation id="224" parent="1" name="utf8mb4_unicode_ci">
+    <collation id="219" parent="1" name="utf8mb4_es_trad_0900_as_cs">
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <collation id="225" parent="1" name="utf8mb4_vietnamese_ci">
+    <collation id="220" parent="1" name="utf8mb4_esperanto_ci">
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <table id="226" parent="2" name="ACTIVITY"/>
-    <table id="227" parent="2" name="ASSISTANT"/>
-    <table id="228" parent="2" name="COLLEGE"/>
-    <table id="229" parent="2" name="GROUPMANAGER"/>
-    <table id="230" parent="2" name="MEMBER"/>
-    <table id="231" parent="2" name="ORGANIZATION"/>
-    <table id="232" parent="2" name="O_T_INTERACTIVE"/>
-    <table id="233" parent="2" name="SA"/>
-    <table id="234" parent="2" name="STU"/>
-    <table id="235" parent="2" name="S_A_COMMENT"/>
-    <table id="236" parent="2" name="S_O_COMMENT"/>
-    <table id="237" parent="2" name="TAG"/>
-    <column id="238" parent="226" name="ac_id">
+    <collation id="221" parent="1" name="utf8mb4_estonian_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="222" parent="1" name="utf8mb4_et_0900_ai_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="223" parent="1" name="utf8mb4_et_0900_as_cs">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="224" parent="1" name="utf8mb4_general_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="225" parent="1" name="utf8mb4_german2_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="226" parent="1" name="utf8mb4_hr_0900_ai_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="227" parent="1" name="utf8mb4_hr_0900_as_cs">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="228" parent="1" name="utf8mb4_hu_0900_ai_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="229" parent="1" name="utf8mb4_hu_0900_as_cs">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="230" parent="1" name="utf8mb4_hungarian_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="231" parent="1" name="utf8mb4_icelandic_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="232" parent="1" name="utf8mb4_is_0900_ai_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="233" parent="1" name="utf8mb4_is_0900_as_cs">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="234" parent="1" name="utf8mb4_ja_0900_as_cs">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="235" parent="1" name="utf8mb4_ja_0900_as_cs_ks">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="236" parent="1" name="utf8mb4_la_0900_ai_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="237" parent="1" name="utf8mb4_la_0900_as_cs">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="238" parent="1" name="utf8mb4_latvian_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="239" parent="1" name="utf8mb4_lithuanian_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="240" parent="1" name="utf8mb4_lt_0900_ai_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="241" parent="1" name="utf8mb4_lt_0900_as_cs">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="242" parent="1" name="utf8mb4_lv_0900_ai_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="243" parent="1" name="utf8mb4_lv_0900_as_cs">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="244" parent="1" name="utf8mb4_persian_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="245" parent="1" name="utf8mb4_pl_0900_ai_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="246" parent="1" name="utf8mb4_pl_0900_as_cs">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="247" parent="1" name="utf8mb4_polish_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="248" parent="1" name="utf8mb4_ro_0900_ai_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="249" parent="1" name="utf8mb4_ro_0900_as_cs">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="250" parent="1" name="utf8mb4_roman_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="251" parent="1" name="utf8mb4_romanian_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="252" parent="1" name="utf8mb4_ru_0900_ai_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="253" parent="1" name="utf8mb4_ru_0900_as_cs">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="254" parent="1" name="utf8mb4_sinhala_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="255" parent="1" name="utf8mb4_sk_0900_ai_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="256" parent="1" name="utf8mb4_sk_0900_as_cs">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="257" parent="1" name="utf8mb4_sl_0900_ai_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="258" parent="1" name="utf8mb4_sl_0900_as_cs">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="259" parent="1" name="utf8mb4_slovak_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="260" parent="1" name="utf8mb4_slovenian_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="261" parent="1" name="utf8mb4_spanish2_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="262" parent="1" name="utf8mb4_spanish_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="263" parent="1" name="utf8mb4_sv_0900_ai_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="264" parent="1" name="utf8mb4_sv_0900_as_cs">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="265" parent="1" name="utf8mb4_swedish_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="266" parent="1" name="utf8mb4_tr_0900_ai_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="267" parent="1" name="utf8mb4_tr_0900_as_cs">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="268" parent="1" name="utf8mb4_turkish_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="269" parent="1" name="utf8mb4_unicode_520_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="270" parent="1" name="utf8mb4_unicode_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="271" parent="1" name="utf8mb4_vi_0900_ai_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="272" parent="1" name="utf8mb4_vi_0900_as_cs">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <collation id="273" parent="1" name="utf8mb4_vietnamese_ci">
+      <Charset>utf8mb4</Charset>
+      <DefaultForCharset>0</DefaultForCharset>
+    </collation>
+    <table id="274" parent="2" name="activity"/>
+    <table id="275" parent="2" name="assistant"/>
+    <table id="276" parent="2" name="college"/>
+    <table id="277" parent="2" name="groupmanager"/>
+    <table id="278" parent="2" name="member"/>
+    <table id="279" parent="2" name="o_t_interactive"/>
+    <table id="280" parent="2" name="organization"/>
+    <table id="281" parent="2" name="s_a_comment"/>
+    <table id="282" parent="2" name="s_o_comment"/>
+    <table id="283" parent="2" name="sa"/>
+    <table id="284" parent="2" name="stu"/>
+    <table id="285" parent="2" name="tag"/>
+    <table id="286" parent="2" name="userinfo"/>
+    <column id="287" parent="274" name="ac_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="239" parent="226" name="ac_name">
+    <column id="288" parent="274" name="ac_name">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="240" parent="226" name="ac_description">
+    <column id="289" parent="274" name="ac_description">
       <Position>3</Position>
       <DataType>varchar(100)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="241" parent="226" name="o_id">
+    <column id="290" parent="274" name="o_id">
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="242" parent="226" name="ac_limit">
+    <column id="291" parent="274" name="ac_limit">
       <Position>5</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="243" parent="226" name="ac_start_time">
+    <column id="292" parent="274" name="ac_start_time">
       <Position>6</Position>
       <DataType>date|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="244" parent="226" name="ac_end_time">
+    <column id="293" parent="274" name="ac_end_time">
       <Position>7</Position>
       <DataType>date|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="245" parent="226" name="FK_Reference_13">
+    <index id="294" parent="274" name="FK_Reference_13">
       <ColNames>o_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="246" parent="226" name="PRIMARY">
+    <key id="295" parent="274" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ac_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="247" parent="226" name="FK_Reference_13">
+    <foreign-key id="296" parent="274" name="FK_Reference_13">
       <ColNames>o_id</ColNames>
       <RefSchemaName>group_db</RefSchemaName>
-      <RefTableName>ORGANIZATION</RefTableName>
+      <RefTableName>organization</RefTableName>
       <RefColNames>o_id</RefColNames>
     </foreign-key>
-    <column id="248" parent="227" name="as_index">
+    <column id="297" parent="275" name="s_id">
       <Position>1</Position>
-      <DataType>int(11)|0s</DataType>
+      <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="249" parent="227" name="s_id">
+    <column id="298" parent="275" name="o_id">
       <Position>2</Position>
-      <DataType>varchar(20)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="250" parent="227" name="o_id">
-      <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="251" parent="227" name="FK_Reference_3">
-      <ColNames>s_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <index id="252" parent="227" name="FK_Reference_11">
+    <index id="299" parent="275" name="FK_Reference_11">
       <ColNames>o_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="253" parent="227" name="PRIMARY">
+    <key id="300" parent="275" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>as_index</ColNames>
+      <ColNames>s_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="254" parent="227" name="FK_Reference_3">
+    <foreign-key id="301" parent="275" name="FK_Reference_3">
       <ColNames>s_id</ColNames>
       <RefSchemaName>group_db</RefSchemaName>
-      <RefTableName>STU</RefTableName>
+      <RefTableName>stu</RefTableName>
       <RefColNames>s_id</RefColNames>
     </foreign-key>
-    <foreign-key id="255" parent="227" name="FK_Reference_11">
+    <foreign-key id="302" parent="275" name="FK_Reference_11">
       <ColNames>o_id</ColNames>
       <RefSchemaName>group_db</RefSchemaName>
-      <RefTableName>ORGANIZATION</RefTableName>
+      <RefTableName>organization</RefTableName>
       <RefColNames>o_id</RefColNames>
     </foreign-key>
-    <column id="256" parent="228" name="c_id">
+    <column id="303" parent="276" name="c_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="257" parent="228" name="c_name">
+    <column id="304" parent="276" name="c_name">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="258" parent="228" name="PRIMARY">
+    <key id="305" parent="276" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>c_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="259" parent="229" name="gm_index">
+    <column id="306" parent="277" name="s_id">
       <Position>1</Position>
-      <DataType>int(11)|0s</DataType>
+      <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="260" parent="229" name="s_id">
+    <column id="307" parent="277" name="o_id">
       <Position>2</Position>
-      <DataType>varchar(20)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="261" parent="229" name="o_id">
-      <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="262" parent="229" name="FK_Reference_2">
-      <ColNames>s_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <index id="263" parent="229" name="FK_Reference_10">
+    <index id="308" parent="277" name="FK_Reference_10">
       <ColNames>o_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="264" parent="229" name="PRIMARY">
+    <key id="309" parent="277" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>gm_index</ColNames>
+      <ColNames>s_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="265" parent="229" name="FK_Reference_2">
+    <foreign-key id="310" parent="277" name="FK_Reference_2">
       <ColNames>s_id</ColNames>
       <RefSchemaName>group_db</RefSchemaName>
-      <RefTableName>STU</RefTableName>
+      <RefTableName>stu</RefTableName>
       <RefColNames>s_id</RefColNames>
     </foreign-key>
-    <foreign-key id="266" parent="229" name="FK_Reference_10">
+    <foreign-key id="311" parent="277" name="FK_Reference_10">
       <ColNames>o_id</ColNames>
       <RefSchemaName>group_db</RefSchemaName>
-      <RefTableName>ORGANIZATION</RefTableName>
+      <RefTableName>organization</RefTableName>
       <RefColNames>o_id</RefColNames>
     </foreign-key>
-    <column id="267" parent="230" name="me_index">
+    <column id="312" parent="278" name="s_id">
       <Position>1</Position>
-      <DataType>int(11)|0s</DataType>
+      <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="268" parent="230" name="s_id">
+    <column id="313" parent="278" name="o_id">
       <Position>2</Position>
-      <DataType>varchar(20)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="269" parent="230" name="o_id">
-      <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="270" parent="230" name="FK_Reference_4">
-      <ColNames>s_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <index id="271" parent="230" name="FK_Reference_9">
+    <index id="314" parent="278" name="FK_Reference_9">
       <ColNames>o_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="272" parent="230" name="PRIMARY">
+    <key id="315" parent="278" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>me_index</ColNames>
+      <ColNames>s_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="273" parent="230" name="FK_Reference_4">
+    <foreign-key id="316" parent="278" name="FK_Reference_4">
       <ColNames>s_id</ColNames>
       <RefSchemaName>group_db</RefSchemaName>
-      <RefTableName>STU</RefTableName>
+      <RefTableName>stu</RefTableName>
       <RefColNames>s_id</RefColNames>
     </foreign-key>
-    <foreign-key id="274" parent="230" name="FK_Reference_9">
+    <foreign-key id="317" parent="278" name="FK_Reference_9">
       <ColNames>o_id</ColNames>
       <RefSchemaName>group_db</RefSchemaName>
-      <RefTableName>ORGANIZATION</RefTableName>
+      <RefTableName>organization</RefTableName>
       <RefColNames>o_id</RefColNames>
     </foreign-key>
-    <column id="275" parent="231" name="o_id">
+    <column id="318" parent="279" name="o_t_index">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="276" parent="231" name="o_name">
-      <Position>2</Position>
-      <DataType>varchar(50)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="277" parent="231" name="o_create_time">
-      <Position>3</Position>
-      <DataType>date|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="278" parent="231" name="o_logo">
-      <Position>4</Position>
-      <DataType>varchar(20)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="279" parent="231" name="o_description">
-      <Position>5</Position>
-      <DataType>varchar(100)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <key id="280" parent="231" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>o_id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <column id="281" parent="232" name="o_t_index">
-      <Position>1</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="282" parent="232" name="o_id">
+    <column id="319" parent="279" name="o_id">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="283" parent="232" name="t_id">
+    <column id="320" parent="279" name="t_id">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="284" parent="232" name="count">
+    <column id="321" parent="279" name="count">
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="285" parent="232" name="FK_Reference_15">
+    <index id="322" parent="279" name="FK_Reference_15">
       <ColNames>o_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="286" parent="232" name="FK_Reference_14">
+    <index id="323" parent="279" name="FK_Reference_14">
       <ColNames>t_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="287" parent="232" name="PRIMARY">
+    <key id="324" parent="279" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>o_t_index</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="288" parent="232" name="FK_Reference_15">
+    <foreign-key id="325" parent="279" name="FK_Reference_15">
       <ColNames>o_id</ColNames>
       <RefSchemaName>group_db</RefSchemaName>
-      <RefTableName>ORGANIZATION</RefTableName>
+      <RefTableName>organization</RefTableName>
       <RefColNames>o_id</RefColNames>
     </foreign-key>
-    <foreign-key id="289" parent="232" name="FK_Reference_14">
+    <foreign-key id="326" parent="279" name="FK_Reference_14">
       <ColNames>t_id</ColNames>
       <RefSchemaName>group_db</RefSchemaName>
-      <RefTableName>TAG</RefTableName>
+      <RefTableName>tag</RefTableName>
       <RefColNames>t_id</RefColNames>
     </foreign-key>
-    <column id="290" parent="233" name="sa_index">
+    <column id="327" parent="280" name="o_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="291" parent="233" name="s_id">
-      <Position>2</Position>
-      <DataType>varchar(20)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <index id="292" parent="233" name="FK_Reference_1">
-      <ColNames>s_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="293" parent="233" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>sa_index</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <foreign-key id="294" parent="233" name="FK_Reference_1">
-      <ColNames>s_id</ColNames>
-      <RefSchemaName>group_db</RefSchemaName>
-      <RefTableName>STU</RefTableName>
-      <RefColNames>s_id</RefColNames>
-    </foreign-key>
-    <column id="295" parent="234" name="s_id">
-      <Position>1</Position>
-      <DataType>varchar(20)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="296" parent="234" name="password">
+    <column id="328" parent="280" name="o_name">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="297" parent="234" name="s_name">
+    <column id="329" parent="280" name="o_create_time">
       <Position>3</Position>
-      <DataType>varchar(50)|0s</DataType>
+      <DataType>date|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="298" parent="234" name="nickname">
+    <column id="330" parent="280" name="o_logo">
       <Position>4</Position>
-      <DataType>varchar(50)|0s</DataType>
+      <DataType>varchar(100)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="299" parent="234" name="sex">
-      <Position>5</Position>
-      <DataType>smallint(6)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="300" parent="234" name="c_id">
-      <Position>6</Position>
-      <DataType>int(11)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <index id="301" parent="234" name="FK_Reference_12">
-      <ColNames>c_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="302" parent="234" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>s_id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <foreign-key id="303" parent="234" name="FK_Reference_12">
-      <ColNames>c_id</ColNames>
-      <RefSchemaName>group_db</RefSchemaName>
-      <RefTableName>COLLEGE</RefTableName>
-      <RefColNames>c_id</RefColNames>
-    </foreign-key>
-    <column id="304" parent="235" name="s_a_index">
-      <Position>1</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="305" parent="235" name="s_a_id">
-      <Position>2</Position>
-      <DataType>int(11)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="306" parent="235" name="ac_id">
-      <Position>3</Position>
-      <DataType>int(11)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="307" parent="235" name="s_id">
-      <Position>4</Position>
-      <DataType>varchar(20)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="308" parent="235" name="s_a_comment">
+    <column id="331" parent="280" name="o_description">
       <Position>5</Position>
       <DataType>varchar(100)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="309" parent="235" name="s_a_comment_time">
+    <key id="332" parent="280" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>o_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="333" parent="281" name="s_a_index">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="334" parent="281" name="s_a_id">
+      <Position>2</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="335" parent="281" name="ac_id">
+      <Position>3</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="336" parent="281" name="s_id">
+      <Position>4</Position>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="337" parent="281" name="s_a_comment">
+      <Position>5</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="338" parent="281" name="s_a_comment_time">
       <Position>6</Position>
       <DataType>date|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="310" parent="235" name="FK_Reference_5">
+    <index id="339" parent="281" name="FK_Reference_5">
       <ColNames>ac_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="311" parent="235" name="FK_Reference_8">
+    <index id="340" parent="281" name="FK_Reference_8">
       <ColNames>s_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="312" parent="235" name="PRIMARY">
+    <key id="341" parent="281" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>s_a_index</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="313" parent="235" name="FK_Reference_5">
+    <foreign-key id="342" parent="281" name="FK_Reference_5">
       <ColNames>ac_id</ColNames>
       <RefSchemaName>group_db</RefSchemaName>
-      <RefTableName>ACTIVITY</RefTableName>
+      <RefTableName>activity</RefTableName>
       <RefColNames>ac_id</RefColNames>
     </foreign-key>
-    <foreign-key id="314" parent="235" name="FK_Reference_8">
+    <foreign-key id="343" parent="281" name="FK_Reference_8">
       <ColNames>s_id</ColNames>
       <RefSchemaName>group_db</RefSchemaName>
-      <RefTableName>STU</RefTableName>
+      <RefTableName>stu</RefTableName>
       <RefColNames>s_id</RefColNames>
     </foreign-key>
-    <column id="315" parent="236" name="s_o_index">
+    <column id="344" parent="282" name="s_o_index">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="316" parent="236" name="s_o_id">
+    <column id="345" parent="282" name="s_o_id">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="317" parent="236" name="o_id">
+    <column id="346" parent="282" name="o_id">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="318" parent="236" name="s_id">
+    <column id="347" parent="282" name="s_id">
       <Position>4</Position>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="319" parent="236" name="s_o_comment">
+    <column id="348" parent="282" name="s_o_comment">
       <Position>5</Position>
       <DataType>varchar(100)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="320" parent="236" name="s_o_comment_time">
+    <column id="349" parent="282" name="s_o_comment_time">
       <Position>6</Position>
       <DataType>date|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="321" parent="236" name="FK_Reference_6">
+    <index id="350" parent="282" name="FK_Reference_6">
       <ColNames>o_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="322" parent="236" name="FK_Reference_7">
+    <index id="351" parent="282" name="FK_Reference_7">
       <ColNames>s_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="323" parent="236" name="PRIMARY">
+    <key id="352" parent="282" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>s_o_index</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="324" parent="236" name="FK_Reference_6">
+    <foreign-key id="353" parent="282" name="FK_Reference_6">
       <ColNames>o_id</ColNames>
       <RefSchemaName>group_db</RefSchemaName>
-      <RefTableName>ORGANIZATION</RefTableName>
+      <RefTableName>organization</RefTableName>
       <RefColNames>o_id</RefColNames>
     </foreign-key>
-    <foreign-key id="325" parent="236" name="FK_Reference_7">
+    <foreign-key id="354" parent="282" name="FK_Reference_7">
       <ColNames>s_id</ColNames>
       <RefSchemaName>group_db</RefSchemaName>
-      <RefTableName>STU</RefTableName>
+      <RefTableName>stu</RefTableName>
       <RefColNames>s_id</RefColNames>
     </foreign-key>
-    <column id="326" parent="237" name="t_id">
+    <column id="355" parent="283" name="sa_index">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="327" parent="237" name="t_name">
+    <column id="356" parent="283" name="s_id">
+      <Position>2</Position>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="357" parent="283" name="FK_Reference_1">
+      <ColNames>s_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="358" parent="283" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>sa_index</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="359" parent="283" name="FK_Reference_1">
+      <ColNames>s_id</ColNames>
+      <RefSchemaName>group_db</RefSchemaName>
+      <RefTableName>stu</RefTableName>
+      <RefColNames>s_id</RefColNames>
+    </foreign-key>
+    <column id="360" parent="284" name="s_id">
+      <Position>1</Position>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="361" parent="284" name="password">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="328" parent="237" name="PRIMARY">
+    <column id="362" parent="284" name="s_name">
+      <Position>3</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="363" parent="284" name="nickname">
+      <Position>4</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="364" parent="284" name="sex">
+      <Position>5</Position>
+      <DataType>smallint(6)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="365" parent="284" name="c_id">
+      <Position>6</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="366" parent="284" name="email">
+      <Position>7</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="367" parent="284" name="FK_Reference_12">
+      <ColNames>c_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="368" parent="284" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>s_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="369" parent="284" name="FK_Reference_12">
+      <ColNames>c_id</ColNames>
+      <RefSchemaName>group_db</RefSchemaName>
+      <RefTableName>college</RefTableName>
+      <RefColNames>c_id</RefColNames>
+    </foreign-key>
+    <column id="370" parent="285" name="t_id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="371" parent="285" name="t_name">
+      <Position>2</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="372" parent="285" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>t_id</ColNames>
       <Primary>1</Primary>
     </key>
+    <column id="373" parent="286" name="nickname">
+      <Position>1</Position>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="374" parent="286" name="s_id">
+      <Position>2</Position>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="375" parent="286" name="classroom">
+      <Position>3</Position>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="376" parent="286" name="photo">
+      <Position>4</Position>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="377" parent="286" name="usersign">
+      <Position>5</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="378" parent="286" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>s_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="379" parent="286" name="FK_Reference_16">
+      <ColNames>s_id</ColNames>
+      <RefSchemaName>group_db</RefSchemaName>
+      <RefTableName>stu</RefTableName>
+      <RefColNames>s_id</RefColNames>
+    </foreign-key>
   </database-model>
 </dataSource>
