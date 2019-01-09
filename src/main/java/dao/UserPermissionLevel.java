@@ -1,8 +1,6 @@
 package dao;
-import com.mchange.v2.c3p0.ComboPooledDataSource;
-import config.dao.DataSourceConfiguration;
+import config.DataSourceConfiguration;
 
-import java.beans.PropertyVetoException;
 import java.sql.*;
 
 

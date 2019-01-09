@@ -1,7 +1,7 @@
 package dao;
 
 import bean.info.OrganizationBean;
-import config.dao.DataSourceConfiguration;
+import config.DataSourceConfiguration;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

@@ -2,8 +2,7 @@ package dao;
 
 import bean.info.StudentBean;
 import bean.result.LoginResBean;
-import com.mchange.v2.c3p0.ComboPooledDataSource;
-import config.dao.DataSourceConfiguration;
+import config.DataSourceConfiguration;
 
 
 import java.beans.PropertyVetoException;

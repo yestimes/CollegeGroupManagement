@@ -3,7 +3,7 @@ package controller;
 
 import bean.info.StudentBean;
 import bean.result.LogoutBean;
-import dao.JsonUtils;
+import utils.JsonUtils;
 
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;

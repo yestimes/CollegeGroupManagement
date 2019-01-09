@@ -1,16 +1,11 @@
-package org.john.utils;
+package utils;
 
 import java.io.UnsupportedEncodingException;
+import java.nio.charset.StandardCharsets;
 
 public class Latin2utf8 {
 
     public static String transform(String src){
-        String dest = null;
-        try {
-            dest = new String(src.getBytes("iso-8859-1"), "UTF-8");
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        }
-        return dest;
+        return new String(src.getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8);
     }
 }

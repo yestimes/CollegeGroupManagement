@@ -9,8 +9,8 @@ $(document).ready(function () {
 
     var nameLink = document.createElement("a");
     nameLink.className += "cssclass";
-    nameLink.innerHTML = "Hello" + i;
-    nameLink.setAttribute("href","http://www.baidu.com?addr=" + i);
+    nameLink.innerHTML = "社团 " + i;
+    nameLink.setAttribute("href","/groups?o_id=" + i);
 
     sortedList.appendChild(iconSpan);
     sortedList.appendChild(nameLink);
@@ -18,7 +18,6 @@ $(document).ready(function () {
     var ulist = document.getElementById("groups-ul");
     ulist.appendChild(sortedList);
     console.log(i);
-
 
   }
 });

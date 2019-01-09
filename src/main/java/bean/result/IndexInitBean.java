@@ -2,6 +2,9 @@ package bean.result;
 
 
 import bean.info.StudentBean;
+import utils.Latin2utf8;
+
+import java.nio.charset.StandardCharsets;
 
 public class IndexInitBean {
 

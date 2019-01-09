@@ -1,7 +1,6 @@
 package controller;
 
 import bean.info.OrganizationBean;
-import dao.JsonUtils;
 import dao.OrganizationDao;
 
 import javax.servlet.ServletException;
