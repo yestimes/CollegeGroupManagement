@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="215c8fed-33b4-4a59-b4aa-085371a5bbfe" name="qcloud" url="http://139.199.163.35">
+        <fileTransfer host="139.199.163.35" port="22" privateKey="C:\Users\John\OneDrive\Privatekey\Day0328" rootFolder="/opt/tomcat" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions controlEncoding="utf-8" dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
