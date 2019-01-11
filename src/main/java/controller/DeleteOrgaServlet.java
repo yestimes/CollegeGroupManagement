@@ -23,12 +23,9 @@ public class DeleteOrgaServlet extends HttpServlet {
 
         int result = OrganizationDao.DeleteOrga(o_id);
 
-        if (result > 0){
-            response.sendRedirect("/admin/group-delete.html");
-        }
-        else{
-            response.sendRedirect("/admin/group-delete.html");
-        }
+
+        response.sendRedirect("/admin/groupInfo-edit.html");
+
 
 
 
