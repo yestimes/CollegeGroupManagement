@@ -42,7 +42,7 @@ function commit(){
         console.log(result);//打印服务端返回的数据(调试用)
         if (result.status == 200) {
             alert( result.info);
-            window.location.href = "/admin/groupInfo_edit.html";
+            window.location.href = "/admin/groupInfo-edit.html";
         }
         else {
             alert(result.info);
