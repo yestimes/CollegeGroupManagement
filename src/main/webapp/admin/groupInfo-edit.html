@@ -19,6 +19,7 @@
 	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 	<script src="vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 	<script src="js/klorofil-common.js"></script>
+	<script src="js/group_table.js"></script>
 	<!-- ICONS -->
 	<link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon.png">
 	<link rel="icon" type="image/png" sizes="96x96" href="img/favicon.png">
@@ -42,9 +43,7 @@
 						<span class="input-group-btn"><button type="button" class="btn btn-primary">Go</button></span>
 					</div>
 				</form>
-				<div class="navbar-btn navbar-btn-right">
-					<a class="btn btn-success update-pro" href="#" title="增删社团" target="_blank"><i class="fa fa-rocket"></i> <span>社团增删</span></a>
-				</div>
+
 				<div id="navbar-menu">
 					<ul class="nav navbar-nav navbar-right">
 						<li class="dropdown">
@@ -53,9 +52,7 @@
 								<span class="badge bg-danger">5</span>
 							</a>
 							<ul class="dropdown-menu notifications">
-								<li><a href="#" class="notification-item"><span class="dot bg-warning"></span>System space is almost full</a></li>
 								<li><a href="#" class="notification-item"><span class="dot bg-danger"></span>You have 9 unfinished tasks</a></li>
-								<li><a href="#" class="notification-item"><span class="dot bg-success"></span>Monthly report is available</a></li>
 								<li><a href="#" class="notification-item"><span class="dot bg-warning"></span>Weekly meeting in 1 hour</a></li>
 								<li><a href="#" class="notification-item"><span class="dot bg-success"></span>Your request has been approved</a></li>
 								<li><a href="#" class="more">See all notifications</a></li>
@@ -71,12 +68,12 @@
 							</ul>
 						</li>
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="img/user.png" class="img-circle" alt="Avatar"> <span>Samuel</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="img/user.png" class="img-circle" alt="Avatar"> <span id"student-name-box">用户姓名</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
 							<ul class="dropdown-menu">
-								<li><a href="#"><i class="lnr lnr-user"></i> <span>My Profile</span></a></li>
-								<li><a href="#"><i class="lnr lnr-envelope"></i> <span>Message</span></a></li>
-								<li><a href="#"><i class="lnr lnr-cog"></i> <span>Settings</span></a></li>
-								<li><a href="#"><i class="lnr lnr-exit"></i> <span>Logout</span></a></li>
+								<li><a href="#"><i class="lnr lnr-user"></i> <span>个人中心</span></a></li>
+								<li><a href="#"><i class="lnr lnr-envelope"></i> <span>通知</span></a></li>
+								<li><a href="#"><i class="lnr lnr-cog"></i> <span>设置</span></a></li>
+								<li><a href="#"><i class="lnr lnr-exit"></i> <span>退出</span></a></li>
 							</ul>
 						</li>
 						<!-- <li>
@@ -93,8 +90,7 @@
 				<nav>
 					<ul class="nav">
 						<li><a href="index.html" class=""><i class="lnr lnr-home"></i> <span>仪表盘</span></a></li>
-						<li><a href="groups.html" class="active"><i class="lnr lnr-linearicons"></i> <span>社团事务</span></a></li>
-						<li><a href="charts.html" class=""><i class="lnr lnr-chart-bars"></i> <span>社团资料</span></a></li>
+						<li><a href="groups.html" class="active"><i class="lnr lnr-linearicons"></i> <span>社团管理</span></a></li>
 						<li><a href="panels.html" class=""><i class="lnr lnr-cog"></i> <span>组织架构</span></a></li>
 						<li><a href="notifications.html" class=""><i class="lnr lnr-alarm"></i> <span>Notifications</span></a></li>
 						<li>
@@ -132,34 +128,13 @@
 										<thead>
 											<tr>
 												<th>#</th>
-												<th>创建时间</th>
 												<th>社团名称</th>
-												<th>负责人</th>
 												<th>操作</th>
+												<th>变更</th>
 											</tr>
 										</thead>
-										<tbody>
-											<tr>
-												<td>1</td>
-												<td>Steve</td>
-												<td>Jobs</td>
-												<td>@steve</td>
-												<td><a href="#">删除</a></td>
-											</tr>
-											<tr>
-												<td>2</td>
-												<td>Simon</td>
-												<td>Philips</td>
-												<td>@simon</td>
-												<td><a href="#">删除</a></td>
-											</tr>
-											<tr>
-												<td>3</td>
-												<td>Jane</td>
-												<td>Doe</td>
-												<td>@jane</td>
-												<td><a href="#">删除</a></td>
-											</tr>
+										<tbody id="table-body-box">
+											<!-- groups -->
 										</tbody>
 									</table>
 								</div>

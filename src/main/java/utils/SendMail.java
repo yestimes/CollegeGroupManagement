@@ -16,7 +16,7 @@ public class SendMail {
 	// 发件人的邮箱的授权码(自己在邮箱服务器中开启并设置)
 	public static String sendEmailPassword = "420881314Ye";
 	// 发件人邮箱的SMTP服务器地址，如：smtp.qq.com
-	public static String sendEmailSMTPHost = "imap.yandex.com";
+	public static String sendEmailSMTPHost = "smtp.yandex.com";
 	// 收件人的邮箱账号
 	public static String receiveMailAccount = "";
 

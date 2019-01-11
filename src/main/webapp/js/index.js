@@ -24,7 +24,7 @@ $(document).ready(function(){
 
 //退出登陆
 $("#logout-link").click(function(){
-  console.log("logout");
+  alert("logout");
   $.getJSON("/userLogout", function(res){
     if (res.status == 200){
       alert("再见，" + res.username);

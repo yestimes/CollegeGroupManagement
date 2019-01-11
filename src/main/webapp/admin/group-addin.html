@@ -2,7 +2,7 @@
 <html lang="zh_CN">
 
 <head>
-	<title></title>
+	<title>增加社团</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -19,7 +19,7 @@
 	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 	<script src="vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 	<script src="js/klorofil-common.js"></script>
-	<script src="js/group_list.js"></script>
+	<script src="js/group_register.js"></script>
 	<!-- ICONS -->
 	<link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon.png">
 	<link rel="icon" type="image/png" sizes="96x96" href="img/favicon.png">
@@ -91,16 +91,8 @@
 				<nav>
 					<ul class="nav">
 						<li><a href="index.html" class=""><i class="lnr lnr-home"></i> <span>仪表盘</span></a></li>
-						<li>
-							<a href="#subPages0" data-toggle="collapse" class="collapsed"><i class="lnr lnr-file-empty"></i> <span>社团管理</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
-							<div id="subPages0" class="collapse ">
-								<ul class="nav">
-									<li><a href="group-addin.html" title="增加社团" target="_blank"><i class="fa fa-rocket"></i> <span>社团创建</span></a></li>
-									<li><a href="groupInfo-edit.html" title="修改社团" target="_blank"><i class="fa fa-rocket"></i> <span>社团编辑</span></a></li>
-									<li><a href="groups.html" title="社团事务" target="_blank"><i class="fa fa-rocket"></i> <span>社团事务中心</span></a></li>
-								</ul>
-							</div>
-						</li>
+						<li><a href="groups.html" class="active"><i class="lnr lnr-home"></i> <span>社团管理</span></a></li>
+
 						<li><a href="charts.html" class=""><i class="lnr lnr-chart-bars"></i> <span>社团资料</span></a></li>
 						<li><a href="panels.html" class=""><i class="lnr lnr-cog"></i> <span>组织架构</span></a></li>
 						<li><a href="notifications.html" class=""><i class="lnr lnr-alarm"></i> <span>Notifications</span></a></li>
@@ -129,12 +121,35 @@
 				<div class="container-fluid">
 					<div class="panel panel-headline demo-icons">
 						<div class="panel-heading">
-							<h3 class="panel-title">点击进入社团事务管理面板</h3>
+							<h3 class="panel-title">增加社团</h3>
 						</div>
 						<div class="panel-body">
-							<ul class="list-unstyled row" id="groups-ul">
-							<!-- container -->
-							</ul>
+							<!-- INPUTS -->
+							<div class="panel">
+								<div class="panel-heading">
+									<h3 class="panel-title">输入信息</h3>
+								</div>
+								<form class="form-auth-small" id="orga-form"  action="#">
+								<div class="panel-body">
+									<input type="text" placeholder="社团名称" class="form-control" name="o_name">
+									<br>
+									<textarea class="form-control" placeholder="社团描述" rows="4" name="o_description"></textarea>
+									<br>
+									<select class="form-control" name="o_logo">
+										<!-- <option value="none">选择Logo</option> -->
+										<option value="1-公益.jpg">公益</option>
+										<option value="2-绿色.jpg">绿色</option>
+										<option value="3-文化.jpg">文化</option>
+										<option value="4-科技.jpg">科技</option>
+										<option value="5-外语.jpg">外语</option>
+										<option value="6-才艺.jpg">才艺</option>
+									</select>
+									<br>
+								  <button type="button" class="btn btn-primary btn-lg btn-block" onclick="commit()">提交</button>
+								</div>
+							</from>
+							</div>
+							<!-- END INPUTS -->
 						</div>
 					</div>
 				</div>

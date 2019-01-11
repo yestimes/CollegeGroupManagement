@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>南昌航空大学社团活动中心</title>
+  <title>社团导航</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="vendors/iconfonts/mdi/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
@@ -19,6 +19,7 @@
   <!--JS LIBRARY-->
   <script src="vendors/jquery/jquery.min.js"></script>
   <script src="js/index.js"></script>
+  <script src="js/group_init.js"></script>
 </head>
 
 <body>
@@ -62,9 +63,6 @@
                 <i class="mdi mdi-logout mr-2 text-primary"></i>
                 退出登陆
               </a>
-
-
-
             </div>
           </li>
           <li class="nav-item d-none d-lg-block full-screen-link">
@@ -213,7 +211,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link"  href="/group-list.html" >
+            <a class="nav-link"  href="/group_navigater.html" class="active">
               <span class="menu-title">社团导航</span>
               <i class="mdi mdi-crosshairs-gps menu-icon"></i>
             </a>
@@ -272,45 +270,20 @@
       <!-- partial -->
       <div class="main-panel">
         <div class="content-wrapper">
-            <div class="col-md-12 grid-margin">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">“嘿，你的环保贺卡”</h4>
-                  <p class="card-description">
-                    绿色协会 <code>环保</code>, <code>公益</code>
-                  </p>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <p class="text-primary">人数上限: 100</p>
-                      <p class="text-success">开始时间: 2018-12-29 12:00</p>
-                      <p class="text-danger">结束时间: 2018-12-29 12:00</p>
-                      <p class="text-warning">参加范围: 全体学生</p>
-                      <p class="text-info"><a href="index.html">点击参与</a></p>
-                    </div>
-                    <div class="col-md-6">
-                      <p class="text-light bg-dark pl-1">desc start</p>
-                      <p class="text-dark">活动完美收官。
-这两天，小绿的小可爱们和行艺社的小可爱们在冬日中给大家送来了贺卡，贺卡可都是我们自己手工制作的哦，大家拿到手上是否感受到了我们的温暖呢？
-明天平安夜，后天圣诞节。大家快将贺卡写上自己想说的话，送给想送的人，将你们的温情和小绿的祝福传递给那个ta。
-                      </p>
-                        <p class="text-muted">文字：冷雨 图片：冷雨、风信子收起</p>
-                      <p class="text-white bg-dark pl-1">desc end</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-        <!-- content-wrapper ends -->
-        <!-- partial: partials/_footer.html -->
-        <footer class="footer">
-          <div class="d-sm-flex justify-content-center justify-content-sm-between">
-            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 南昌航空大学现代教育技术与信息中心2017 <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap Dash</a>. All rights reserved.</span>
-            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="mdi mdi-heart text-danger"></i></span>
+          <div class="page-header">
+            <h3 class="page-title">
+              所有社团
+            </h3>
           </div>
-        </footer>
-        <!-- partial -->
-      </div>
+          <div class="row icons-list" id="group-list-box">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <i class="mdi mdi-delete-variant"></i>
+                <a href="http://baidu.com?o_id=666">百度</a>
+            </div>
+
+
+          </div>
+        </div>
       <!-- main-panel ends -->
     </div>
     <!-- page-body-wrapper ends -->
