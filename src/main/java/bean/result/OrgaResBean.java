@@ -45,10 +45,10 @@ public class OrgaResBean {
     }
 
 
-    public void AddSuccess(int o_id){
+    public void AddSuccess(){
         setStatus(200);
         setInfo("创建成功！");
-        setUrl("/groups?o_id="+o_id);
+        //setUrl("/groups?o_id="+o_id);
     }
 
     public void AddFail(){

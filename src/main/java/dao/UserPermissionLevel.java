@@ -47,7 +47,8 @@ public class UserPermissionLevel {
         return -1;
     }
 
-    private static int inGroupManager(String username){
+    public static int inGroupManager(String username){
+        int ret = -1;
         try {
             Connection conn= DataSourceConfiguration.getDataSource().getConnection();
             String sql = "SELECT COUNT(*) FROM GROUPMANAGER WHERE s_id = ?";
@@ -55,18 +56,24 @@ public class UserPermissionLevel {
             pstmt.setString(1, username);
 
             ResultSet res = pstmt.executeQuery();
+
             if (res.next()){
-                return res.getInt(1);
+                ret =  res.getInt(1);
             }
             else {
-                return 0;
+                ret = 0;
             }
+            res.close();
+            pstmt.close();
+            conn.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }
+
         return -1;
     }
-    private static int inGroupAssistant(String username){
+    public static int inGroupAssistant(String username){
+        int ret = -1;
         try {
             Connection conn= DataSourceConfiguration.getDataSource().getConnection();
             String sql = "SELECT COUNT(*) FROM ASSISTANT WHERE s_id = ?";
@@ -74,36 +81,46 @@ public class UserPermissionLevel {
             pstmt.setString(1, username);
 
             ResultSet resultSet =  pstmt.executeQuery();
+
             if (resultSet.next()){
-                return resultSet.getInt(1);
+                ret =  resultSet.getInt(1);
             }
             else {
-                return 0;
+                ret = 0;
             }
+            resultSet.close();
+            pstmt.close();
+            conn.close();
         } catch (SQLException e) {
             e.printStackTrace();
+            ret = -1;
         }
-        return -1;
+        return ret;
     }
 
-    private static int inGroupMember(String username){
+    private static int inGroupMember(String username) {
+        int ret = -1;
         try {
-            Connection conn= DataSourceConfiguration.getDataSource().getConnection();
+            Connection conn = DataSourceConfiguration.getDataSource().getConnection();
             String sql = "SELECT COUNT(*) FROM MEMBER WHERE s_id = ?";
             PreparedStatement pstmt = conn.prepareStatement(sql);
             pstmt.setString(1, username);
 
-            ResultSet resultSet =  pstmt.executeQuery();
-            if (resultSet.next()){
-                return resultSet.getInt(1);
+            ResultSet resultSet = pstmt.executeQuery();
+
+            if (resultSet.next()) {
+                ret = resultSet.getInt(1);
+            } else {
+                ret = 0;
             }
-            else {
-                return 0;
-            }
+            resultSet.close();
+            pstmt.close();
+            conn.close();
         } catch (SQLException e) {
             e.printStackTrace();
+            ret = -1;
         }
-        return -1;
+        return ret;
     }
 
 

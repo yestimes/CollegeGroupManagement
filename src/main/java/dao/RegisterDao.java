@@ -24,6 +24,8 @@ public class RegisterDao {
             pstmt.setString(1, s_id);
 
             ResultSet resultSet = pstmt.executeQuery();
+            pstmt.close();
+            conn.close();
             if (resultSet.next()){
                 return resultSet.getInt(1) > 0;
             }
@@ -114,7 +116,11 @@ public class RegisterDao {
 
             //执行后都会返回一个数据行，这个result就是来接收这个影响了多少行数据。
 
-            return  pst.executeUpdate();
+            int res =   pst.executeUpdate();
+            pst.close();
+            conn.close();
+
+            return res;
 
         } catch (SQLException e) {
             // TODO Auto-generated catch block

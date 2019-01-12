@@ -333,6 +333,36 @@ public class OrganizationDao {
 
     }
 
+    public static String getOrgaName(int o_id){
+        String res = null;
+        if  (o_id <= 0){
+            return null;
+        }else {
+            try {
+                Connection conn = DataSourceConfiguration.getConnection();
+                String sql = "SELECT o_name FROM organization WHERE o_id = ?";
+                PreparedStatement pstmt = conn.prepareStatement(sql);
+                pstmt.setInt(1, o_id);
+
+                ResultSet resultSet = pstmt.executeQuery();
+
+                if (resultSet.next()){
+                    res =  resultSet.getString("o_name");
+                }else {
+                    res = "";
+                }
+                resultSet.close();
+                pstmt.close();
+                conn.close();
+            } catch (PropertyVetoException e) {
+                e.printStackTrace();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        return res;
+    }
+
     public int AddTag(){
         int result = 0;
 

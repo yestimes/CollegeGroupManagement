@@ -31,6 +31,9 @@ public class OrgaLinkListDao {
                 bean.setO_name(resultSet.getString("o_name"));
                 orgaData.add(bean);
             }
+            resultSet.close();
+            stmt.close();
+            conn.close();
 
             return  (orgaData);
 

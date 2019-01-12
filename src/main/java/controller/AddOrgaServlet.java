@@ -45,8 +45,7 @@ public class AddOrgaServlet extends HttpServlet {
         //根据result结果设置返回resBean的参数值
         if (result >0){
             System.out.println("Orga Insert Success！");
-            int o_id = dao.FindOid(o_name);
-            resBean.AddSuccess(o_id);
+            resBean.AddSuccess();
         }
         else {
             System.out.println("Orga Insert fail！");

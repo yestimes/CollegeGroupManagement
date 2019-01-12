@@ -2,7 +2,9 @@ package dao;
 
 import bean.info.StudentBean;
 import bean.result.LoginResBean;
+import bean.result.StuInfoResBean;
 import config.DataSourceConfiguration;
+import utils.ArgsCheck;
 
 
 import java.beans.PropertyVetoException;
@@ -68,6 +70,94 @@ public class StudentDao {
 
         }
 
+
+        return resBean;
+    }
+
+    private static String queryByName(String s_name){
+        String res = null;
+        try {
+            Connection conn = DataSourceConfiguration.getConnection();
+            String sql ="SELECT s_id FROM stu WHERE s_name = ?";
+            PreparedStatement pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1, s_name);
+
+            ResultSet resultSet = pstmt.executeQuery();
+
+            if (resultSet.next()){
+                res = resultSet.getString("s_id");
+            }else {
+                res =  "";
+            }
+            resultSet.close();
+            pstmt.close();
+            conn.close();
+
+        } catch (PropertyVetoException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return res;
+    }
+
+    private static String queryByS_id(String s_id){
+        String res = null;
+        try {
+            Connection conn = DataSourceConfiguration.getConnection();
+            String sql ="SELECT s_id FROM stu WHERE s_id = ?";
+            PreparedStatement pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1, s_id);
+
+            ResultSet resultSet = pstmt.executeQuery();
+
+            if (resultSet.next()){
+                res =  resultSet.getString("s_name");
+            }else {
+                res =  "";
+            }
+            pstmt.close();
+            conn.close();
+        } catch (PropertyVetoException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return res;
+    }
+
+
+    //查询学生姓名或者学号
+    public static StuInfoResBean getStuInfo(String s_id, String s_name){
+
+        StuInfoResBean resBean = new StuInfoResBean();
+        //没有给学号就查名字
+        if (!ArgsCheck.isStringArgsCorrect(s_id)){
+            //名字都没有就gg
+            if (!ArgsCheck.isStringArgsCorrect(s_name)){
+                resBean.onArgsInValidate();
+            }else {
+                //查学号
+                String dest_id = queryByName(s_name);
+                if (dest_id == null){
+                    resBean.onSysemException();
+                }else if (dest_id.length() == 0){
+                    resBean.onNotFound();
+                }else{
+                    resBean.onSuccess(dest_id, s_name);
+                }
+            }
+        }else {
+            //查姓名
+            String dest_name = queryByS_id(s_id);
+            if (dest_name == null){
+                resBean.onSysemException();
+            }else if (dest_name.length() == 0){
+                resBean.onNotFound();
+            }else {
+                resBean.onSuccess(s_id, dest_name);
+            }
+        }
 
         return resBean;
     }

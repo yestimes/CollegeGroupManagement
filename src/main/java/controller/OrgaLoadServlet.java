@@ -25,10 +25,14 @@ public class OrgaLoadServlet extends HttpServlet {
             try {
                 response.setContentType("application/json;charset=utf-8");
                 JsonUtils.sendJsonBack(response.getWriter(), bean); //以json的形式传回给js
+
+                request.getSession().removeAttribute("orgaInfo");
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
+
+
 
     }
 

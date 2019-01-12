@@ -3,6 +3,7 @@ package utils;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -36,5 +37,19 @@ public class JsonUtils {
         System.out.println(mapJakcson);
         return mapJakcson;
 
+    }
+
+    public static int returnJson(HttpServletResponse response, Object bean){
+        response.setContentType("application/json;charset=utf-8");
+        String mapJakcson = object2Json(bean);
+
+        try {
+            response.getWriter().print(mapJakcson);
+        } catch (IOException e) {
+            e.printStackTrace();
+            return -1;
+        }
+
+        return 0;
     }
 }

@@ -86,6 +86,6 @@ function isPasswordInSame(){
 }
 
 function isMale(){
-  return ($("#male").is(':checked') && !$("#formale").is(':checked'))
+  return ($("#male").is(':checked') || !$("#formale").is(':checked'))
 
 }
