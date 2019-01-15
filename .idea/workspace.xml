@@ -6,207 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99bbc54b-faf5-46b0-a1e7-2bd94ee61921" name="Default" comment="fix some bugs, add activity list pane, make some web page for more function complete">
-      <change afterPath="$PROJECT_DIR$/src/main/java/bean/dataBuffer/ActiLinkBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bean/dataBuffer/ActivityBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bean/info/ActiApplyBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bean/info/ActiLinkBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bean/info/OTBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bean/info/OrgaCommBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bean/info/OrgaLinkBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bean/info/PersonInfoBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bean/result/ActiApplyResBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bean/result/ActiLinkListResBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bean/result/ActiResBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bean/result/ApplyResBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bean/result/CommResBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bean/result/OrgaChooseResBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bean/result/OrgaCommListResBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bean/result/PersonResBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bean/result/StatisInfoResBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bean/result/TagResBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/StatisInfoServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/activity/ActiAddServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/activity/ActiApplyAddServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/activity/ActiApplyListServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/activity/ActiEditServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/activity/ActiLinkServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/activity/ActiListServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/activity/DeleteActiServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/admin/AssisAddServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/admin/AssisDeleServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/admin/OrgaAssChoose.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/admin/OrgaPaneInitServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/admin/OrgaPaneServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/apply/AgreeAppServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/apply/ApplyAcceptServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/apply/ApplyServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/apply/RefuseAppServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/orgaComm/DeleteOrgaCommServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/orgaComm/OrgaCommAddServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/orgaComm/OrgaCommListServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/tag/TagAddServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/tag/TagListServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/user/PersonInfoServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/ApplyDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/StatisInfoDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/TagDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/activity/ActiApplyDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/activity/ActiLinkListDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/activity/ActivityDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/organization/OrgaCommDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/organization/OrgaPaneDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/user/PersonInfoDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/DateUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/account.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/acti-addin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/acti-com-list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/acti-list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/apply-list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/com-list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/css/demo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/css/demo.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/css/main.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/group-edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/groupInfo-edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/groups.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/img/apple-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/img/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/img/login-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/img/logo-dark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/img/profile-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/img/user-medium.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/img/user.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/img/user1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/img/user2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/img/user3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/img/user4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/img/user5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/js/acti-addin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/js/group_list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/js/group_register.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/js/group_table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/js/klorofil-common.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/js/orgaActiList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/js/orgaEditConfig.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/js/orgaGmEdit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/js/pane-init.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/js/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/member-list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/redirect.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/bootstrap/css/bootstrap-theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/bootstrap/css/bootstrap-theme.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/bootstrap/js/npm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/chartist/css/chartist-custom.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/chartist/css/chartist-custom.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/chartist/css/chartist.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/chartist/css/chartist.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/chartist/js/chartist.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/chartist/js/chartist.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/chartist/map/chartist.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/chartist/map/chartist.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/chartist/scss/chartist.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/font-awesome/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/font-awesome/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/jquery-slimscroll/jquery.slimscroll.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/jquery-slimscroll/jquery.slimscroll.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/jquery.easy-pie-chart/angular.easypiechart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/jquery.easy-pie-chart/angular.easypiechart.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/jquery.easy-pie-chart/easypiechart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/jquery.easy-pie-chart/easypiechart.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/jquery.easy-pie-chart/jquery.easypiechart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/jquery/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/jquery/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/jquery/jquery.min.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/linearicons/fonts/Linearicons-Free.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/linearicons/fonts/Linearicons-Free.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/linearicons/fonts/Linearicons-Free.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/linearicons/fonts/Linearicons-Free.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/linearicons/fonts/Linearicons-Free.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/linearicons/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/toastr/toastr.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/toastr/toastr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/toastr/toastr.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/vendor/toastr/toastr.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/acti-joined.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/acti-list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/CommList.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/OrgaCommTable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/js/OrgaCommTable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/js/addOrgaComm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/group-joined.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/js/addOrgaComm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/js/addTag.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/actiList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/personinfo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/user-info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/762ade30-15c0-4009-a74d-c8168df1c0f4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/762ade30-15c0-4009-a74d-c8168df1c0f4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="99bbc54b-faf5-46b0-a1e7-2bd94ee61921" name="Default" comment="add group's main page">
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/IndexInitServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bean/info/OrganizationBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bean/info/OrganizationBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bean/result/OrgaLinkListResBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bean/result/OrgaLinkListResBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bean/result/OrgaListResBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bean/result/OrgaListResBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bean/result/OrgaResBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bean/result/OrgaResBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/DataSourceConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/DataSourceConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/AddOrgaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/organization/OrgaAddServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/DeleteOrgaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/organization/OrgaDeleteServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/EditOrgaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/organization/OrgaEditServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/FindPasswdServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/user/FindPasswdServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/GroupmAddServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/admin/GroupmAddServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/IndexInitServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/user/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/user/LogoutServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/OrgaGetServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/organization/OrgaGetServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/OrgaGmChangeJump.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/admin/OrgaGmChangeJump.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/OrgaGmChangeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/admin/OrgaGmChangeServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/OrgaGmListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/admin/OrgaGmListServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/OrgaGmLoad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/admin/OrgaGmLoad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/OrgaLinkListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/organization/OrgaLinkListServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/OrgaListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/organization/OrgaListServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/OrgaLoadJumpServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/organization/OrgaLoadJumpServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/OrgaLoadServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/organization/OrgaLoadServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/OrgaSetServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/organization/OrgaSetServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/user/RegisterServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SeekOrgaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/organization/OrgaSeekServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/StuInfoSeek.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/user/StuInfoSeek.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/GroupmDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/GroupmDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/OrgaGmListDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/organization/OrgaGmListDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/OrgaLinkListDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/organization/OrgaLinkListDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/OrganizationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/organization/OrganizationDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/PasswdDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/user/PasswdDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/RegisterDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/user/RegisterDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/StudentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/user/StudentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/UserPermissionLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/user/UserPermissionLevel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/SendMail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/SendMail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/js/init.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/js/init.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/group-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/group-list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/group/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/group/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/group/js/init.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/group/js/init.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -259,10 +62,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/admin/AssisAddServlet.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/activity/ActiAddServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="437">
+              <caret line="23" column="69" selection-start-line="23" selection-start-column="69" selection-end-line="23" selection-end-column="69" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -271,92 +74,60 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/activity/DeleteActiServlet.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/IndexInitServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="513">
+              <caret line="27" column="66" selection-start-line="27" selection-start-column="66" selection-end-line="27" selection-end-column="66" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/activity/ActiListServlet.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/group/js/init.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/group/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="361">
+              <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/activity/ActiLinkServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/activity/ActiEditServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/login.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/activity/ActiApplyListServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/register.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/activity/ActiApplyAddServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/user-info.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/OrgaPane/index.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/activity/ActiAddServlet.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/admin/GroupmAddServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/admin/AssisDeleServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
+            <state relative-caret-position="-114" />
           </provider>
         </entry>
       </file>
@@ -399,8 +170,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/controller/user/PersonInfoServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/OrgaGmLoad.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/OrgaComm/OrgaListServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/user/LoginServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/user/PersonInfoDao.java" />
@@ -450,6 +219,8 @@
         <option value="$PROJECT_DIR$/src/main/java/controller/activity/ActiApplyListServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/activity/ActiApplyAddServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/activity/ActiAddServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/IndexInitServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/group/index.html" />
       </list>
     </option>
   </component>
@@ -502,6 +273,23 @@
             <path>
               <item name="day0101_loginServer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="loginServer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="day0101_loginServer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="loginServer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="artifacts" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="day0101_loginServer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="loginServer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="dataSources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="day0101_loginServer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="loginServer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
@@ -536,16 +324,21 @@
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="controller" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="activity" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="dao" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="day0101_loginServer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="loginServer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="controller" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="webapp" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="day0101_loginServer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="loginServer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="webapp" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
@@ -553,36 +346,25 @@
               <item name="loginServer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="controller" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="apply" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="webapp" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="group" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="day0101_loginServer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="loginServer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="controller" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="orgaComm" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="webapp" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="group" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="js" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="day0101_loginServer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="loginServer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="controller" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="organization" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="day0101_loginServer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="loginServer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="controller" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="tag" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="webapp" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="OrgaPane" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -789,7 +571,7 @@
       <workItem from="1547494118773" duration="187000" />
       <workItem from="1547511232319" duration="9759000" />
       <workItem from="1547534113536" duration="7765000" />
-      <workItem from="1547542508365" duration="1427000" />
+      <workItem from="1547542508365" duration="5772000" />
     </task>
     <task id="LOCAL-00001" summary="First commit complete project">
       <created>1546506801642</created>
@@ -868,11 +650,18 @@
       <option name="project" value="LOCAL" />
       <updated>1547301343134</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add group's main page">
+      <created>1547544451190</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1547544451190</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="237145000" />
+    <option name="totallyTimeSpent" value="241490000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1839" height="1200" extended-state="6" />
@@ -959,47 +748,10 @@
     <MESSAGE value="fix bug of connection timeout" />
     <MESSAGE value="fix some bugs, add activity list, add enter for each user type" />
     <MESSAGE value="fix some bugs, add activity list pane, make some web page for more function complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix some bugs, add activity list pane, make some web page for more function complete" />
+    <MESSAGE value="add group's main page" />
+    <option name="LAST_COMMIT_MESSAGE" value="add group's main page" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/bean/info/OrgaLinkBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bean/result/OrgaListResBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/OrgaCommDao.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/organization/OrganizationDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="155" column="30" selection-start-line="155" selection-start-column="30" selection-end-line="155" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bean/result/OrgaResBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="46" column="16" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/organization/AddOrgaServlet.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/organization/OrgaLinkListDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/OrgaLinkListDao.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/organization/OrgaEditServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1010,7 +762,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/IndexInitServlet.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/organization/OrgaLinkListServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="131">
@@ -1360,7 +1111,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/activity/ActiEditServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
@@ -1380,12 +1131,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/activity/ActiAddServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="437">
+          <caret line="23" column="69" selection-start-line="23" selection-start-column="69" selection-end-line="23" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/IndexInitServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" column="66" selection-start-line="27" selection-start-column="66" selection-end-line="27" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/group/js/init.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/group/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/register.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/user-info.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/OrgaPane/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-114" />
       </provider>
     </entry>
   </component>
