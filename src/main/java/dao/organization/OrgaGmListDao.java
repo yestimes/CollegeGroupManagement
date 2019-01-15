@@ -49,20 +49,24 @@ public class OrgaGmListDao {
             if (conn == null){
                 return null;
             }else {
+                bean = new OrgaGmBean();
+                bean.setO_id(o_id+ "");
+
                 String sql = "SELECT organization.o_name, groupmanager.s_id, stu.s_name FROM groupmanager, organization, stu where groupmanager.o_id = organization.o_id and groupmanager.s_id = stu.s_id and groupmanager.o_id = ?";
                 PreparedStatement pstmt = conn.prepareStatement(sql);
                 pstmt.setInt(1, o_id);
                 ResultSet resultSet = pstmt.executeQuery();
 
                 if (resultSet.next()){
-                    bean = new OrgaGmBean();
-                    bean.setO_id(o_id+ "");
                     bean.setO_name(resultSet.getString("o_name"));
                     bean.setS_id(resultSet.getString("s_id"));
                     bean.setS_name(resultSet.getString("s_name"));
                 }
                 else {
                     System.out.println("OrgaGm of o_id " + o_id + " not found");
+                    bean.setO_name(OrganizationDao.getOrgaName(o_id));
+                    bean.setS_name("空缺");
+                    bean.setS_id("");
                 }
                 resultSet.close();
                 conn.close();

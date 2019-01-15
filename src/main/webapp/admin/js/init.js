@@ -19,60 +19,134 @@ $(document).ready(function(){
         }
     });
 
+    console.log("start");
     showData();
+    console.log("end");
 });
 
+
+
 function showData(){
-  console.log("call echarts");
-  var myChart = echarts.init(document.getElementById('pie-box'));
+    console.log("call echarts");
+    var maleChart = echarts.init(document.getElementById('male-pie-box'));
 
-  // 指定图表的配置项和数据
-  option = {
-    title : {
-        text: '南丁格尔玫瑰图',
-        subtext: '纯属虚构',
-        x:'center'
-    },
-    tooltip : {
-        trigger: 'item',
-        formatter: "{a} <br/>{b} : {c} ({d}%)"
-    },
-    legend: {
-        x : 'center',
-        y : 'bottom',
-        data:['国学社','绿色协会','远风社']
-    },
-    toolbox: {
-        show : true,
-        feature : {
-            mark : {show: true},
-            dataView : {show: true, readOnly: false},
-            magicType : {
-                show: true,
-                type: ['pie', 'funnel']
-            },
-            restore : {show: true},
-            saveAsImage : {show: true}
-        }
-    },
-    calculable : true,
-    series : [
-          {
-            name:'面积模式',
-            type:'pie',
-            radius : [30, 110],
-            center : ['50%', '50%'],
-            roseType : 'area',
+    // 指定图表的配置项和
+    maleOption = {
+        tooltip: {
+            trigger: 'item',
+            formatter: "{a} <br/>{b}: {c} ({d}%)"
+        },
+        legend: {
+            orient: 'vertical',
+            x: 'right',
+            data:['男', '女']
+        },
+        series: [
+            {
+                name:'性别比例',
+                type:'pie',
+                radius: ['70%', '50%'],
+                avoidLabelOverlap: false,
+                label: {
+                    normal: {
+                        show: false,
+                        position: 'center'
+                    },
+                    emphasis: {
+                        show: true,
+                        textStyle: {
+                            fontSize: '30',
+                            fontWeight: 'bold'
+                        }
+                    }
+                },
+                labelLine: {
+                    normal: {
+                        show: false
+                    }
+                },
+                data:[
+
+                ]
+            }
+        ]
+    };
+    // 使用刚指定的配置项和数据显示图表。
+    maleChart.setOption(maleOption);
+
+    var countChart = echarts.init(document.getElementById('pie-box'));
+
+
+    countOption = {
+      title : {
+          text: '成员分布',
+          x:'center'
+      },
+      tooltip : {
+          trigger: 'item',
+          formatter: "{a} <br/>{b} : {c} ({d}%)"
+      },
+      legend: {
+          x : 'center',
+          y : 'bottom',
+          data:[]
+      },
+      toolbox: {
+          show : true,
+          feature : {
+              mark : {show: true},
+              dataView : {show: true, readOnly: false},
+              magicType : {
+                  show: true,
+                  type: ['pie', 'funnel']
+              },
+              restore : {show: true},
+              saveAsImage : {show: true}
+          }
+      },
+      calculable : true,
+      series : [
+            {
+              name:'面积模式',
+              type:'pie',
+              radius : [30, 110],
+              center : ['50%', '50%'],
+              roseType : 'area',
+              data:[
+
+              ]
+          }
+      ]
+  };
+
+  countChart.setOption(countOption);
+
+
+    $.getJSON("/StatisInfo", function(res){
+
+      console.log(res);
+        maleChart.setOption({
+          series:[{
             data:[
-                {value:10, name:'国学社'},
-                {value:12, name:'绿色协会'},
-                {value:15, name:'远风社'},
+              {value: res.maleNum, name:'男'},
+              {value: res.formaleNum, name:'女'}
             ]
+          }]
+        });
+
+        countData = []
+        for( i in res.orgaNames){
+          countData.push({value: res.orgaMemCount[i], name: res.orgaNames[i]});
         }
-    ]
-};
 
+        countChart.setOption({
+          legend: {
+            data: res.orgaNames
+          },
+          series :[{
+            data: countData
+          }]
+        });
 
-  // 使用刚指定的配置项和数据显示图表。
-  myChart.setOption(option);
+    });
 }

@@ -31,7 +31,6 @@ public class ActiLinkListResBean {
     }
 
 
-
     public int getStatus() {
         return status;
     }

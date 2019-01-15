@@ -1,68 +1,64 @@
 package bean.result;
 
+import java.util.List;
+
 public class StatisInfoResBean {
-    private int TotalNum;
-    private int FemaleNum;
-    private int MaleNum;
-    private int OneNum;
-    private int TwoNum;
-    private int ThreeNum;
-    private int FourNum;
 
-    public void setFemaleNum(int femaleNum) {
-        FemaleNum = femaleNum;
+    private int status;
+    private String info;
+    private List<String> orgaNames;
+    private  List<Integer> orgaMemCount;
+
+    private int maleNum;
+    private int formaleNum;
+
+
+    public String getInfo() {
+        return info;
     }
 
-    public int getFemaleNum() {
-        return FemaleNum;
-    }
-
-    public void setFourNum(int fourNum) {
-        FourNum = fourNum;
-    }
-
-    public int getFourNum() {
-        return FourNum;
-    }
-
-    public void setMaleNum(int maleNum) {
-        MaleNum = maleNum;
+    public int getStatus() {
+        return status;
     }
 
     public int getMaleNum() {
-        return MaleNum;
+        return maleNum;
     }
 
-    public void setOneNum(int oneNum) {
-        OneNum = oneNum;
+    public int getFormaleNum() {
+        return formaleNum;
     }
 
-    public int getOneNum() {
-        return OneNum;
+    public List<Integer> getOrgaMemCount() {
+        return orgaMemCount;
     }
 
-    public void setThreeNum(int threeNum) {
-        ThreeNum = threeNum;
+    public List<String> getOrgaNames() {
+        return orgaNames;
     }
 
-    public int getThreeNum() {
-        return ThreeNum;
+    public void setStatus(int status) {
+        this.status = status;
     }
 
-    public void setTotalNum(int totalNum) {
-        TotalNum = totalNum;
+    public void setInfo(String info) {
+        this.info = info;
     }
 
-    public int getTotalNum() {
-        return TotalNum;
+    public void setFormaleNum(int formaleNum) {
+        this.formaleNum = formaleNum;
     }
 
-    public void setTwoNum(int twoNum) {
-        TwoNum = twoNum;
+    public void setMaleNum(int maleNum) {
+        this.maleNum = maleNum;
     }
 
-    public int getTwoNum() {
-        return TwoNum;
+    public void setOrgaMemCount(List<Integer> orgaMemCount) {
+        this.orgaMemCount = orgaMemCount;
+    }
+
+    public void setOrgaNames(List<String> orgaNames) {
+        this.orgaNames = orgaNames;
     }
 
 }

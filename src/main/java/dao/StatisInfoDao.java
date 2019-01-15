@@ -1,181 +1,97 @@
 package dao;
 
+import bean.info.OrganizationBean;
 import bean.result.StatisInfoResBean;
 import config.DataSourceConfiguration;
+import dao.organization.OrganizationDao;
 
 import java.beans.PropertyVetoException;
-import java.sql.Connection;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
+import java.util.LinkedList;
+import java.util.List;
 
 public class StatisInfoDao {
-    //获取评论人数
-    public static int GetTotalCount(){
-        int count = 0;
-        Connection conn = null;
-        try {
-            if ((conn = DataSourceConfiguration.getConnection()) == null){
-                System.out.println("System error!");
-            }
-            else {
-                String sql = "select count(*) from S_A_COMMENT group by s_id";
-                Statement stmt = conn.createStatement();
-                count = stmt.executeUpdate(sql);
-                stmt.close();
-                conn.close();
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return count;
-    }
 
-    //获取性别女
-    public static int FemaleNum(){
-        int count = 0;
-        Connection conn = null;
-        try {
-            if ((conn = DataSourceConfiguration.getConnection()) == null){
-                System.out.println("System error!");
-            }
-            else {
-                String sql = "select count(*) from STU,S_A_COMMENT where STU.s_id = S_A_COMMENT.s_id and STU.sex = 0";
-                Statement stmt = conn.createStatement();
-                count = stmt.executeUpdate(sql);
-                stmt.close();
-                conn.close();
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return count;
-    }
 
-    //获取性别男
-    public static int MaleNum(){
-        int count = 0;
-        Connection conn = null;
-        try {
-            if ((conn = DataSourceConfiguration.getConnection()) == null){
-                System.out.println("System error!");
-            }
-            else {
-                String sql = "select count(*) from STU,S_A_COMMENT where STU.s_id = S_A_COMMENT.s_id and STU.sex = 1";
-                Statement stmt = conn.createStatement();
-                count = stmt.executeUpdate(sql);
-                stmt.close();
-                conn.close();
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return count;
-    }
-
-    //获取15级
-    public static int OneNum(){
-        int count = 0;
-        Connection conn = null;
-        try {
-            if ((conn = DataSourceConfiguration.getConnection()) == null){
-                System.out.println("System error!");
-            }
-            else {
-                String sql = "select count(*) from S_A_COMMENT where left (s_id,2) = '15'";
-                Statement stmt = conn.createStatement();
-                count = stmt.executeUpdate(sql);
-                stmt.close();
-                conn.close();
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return count;
-    }
-
-    //获取16级
-    public static int TwoNum(){
-        int count = 0;
-        Connection conn = null;
-        try {
-            if ((conn = DataSourceConfiguration.getConnection()) == null){
-                System.out.println("System error!");
-            }
-            else {
-                String sql = "select count(*) from S_A_COMMENT where left (s_id,2) = '16'";
-                Statement stmt = conn.createStatement();
-                count = stmt.executeUpdate(sql);
-                stmt.close();
-                conn.close();
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return count;
-    }
-
-    //获取17级
-    public static int ThreeNum(){
-        int count = 0;
-        Connection conn = null;
-        try {
-            if ((conn = DataSourceConfiguration.getConnection()) == null){
-                System.out.println("System error!");
-            }
-            else {
-                String sql = "select count(*) from S_A_COMMENT where left (s_id,2) = '17'";
-                Statement stmt = conn.createStatement();
-                count = stmt.executeUpdate(sql);
-                stmt.close();
-                conn.close();
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return count;
-    }
-
-    //获取18级
-    public static int FourNum(){
-        int count = 0;
-        Connection conn = null;
-        try {
-            if ((conn = DataSourceConfiguration.getConnection()) == null){
-                System.out.println("System error!");
-            }
-            else {
-                String sql = "select count(*) from S_A_COMMENT where left (s_id,2) = '18'";
-                Statement stmt = conn.createStatement();
-                count = stmt.executeUpdate(sql);
-                stmt.close();
-                conn.close();
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return count;
-    }
-
-    public static StatisInfoResBean StatisInfoRes(){
+    public static StatisInfoResBean StatisInfoRes() {
         StatisInfoResBean resBean = new StatisInfoResBean();
+        List<String> orgaNames = new LinkedList<>();
 
-        int TotalNum = StatisInfoDao.GetTotalCount();
-        int FemaleNum = StatisInfoDao.FemaleNum();
-        int MaleNum = StatisInfoDao.MaleNum();
-        int OneNum = StatisInfoDao.OneNum();
-        int TwoNum = StatisInfoDao.TwoNum();
-        int ThreeNum = StatisInfoDao.ThreeNum();
-        int FourNum = StatisInfoDao.FourNum();
+        List<OrganizationBean> orgs =  OrganizationDao.OrgaList();
+        List<Integer> o_ids = new LinkedList<>();
+        for (OrganizationBean bean: orgs){
+            orgaNames.add(bean.getO_name());
+            o_ids.add(bean.getO_id());
+        }
+        List<Integer> orgaSum = new LinkedList<>();
 
-        resBean.setTotalNum(TotalNum);
-        resBean.setFemaleNum(FemaleNum);
-        resBean.setMaleNum(MaleNum);
-        resBean.setOneNum(OneNum);
-        resBean.setTwoNum(TwoNum);
-        resBean.setThreeNum(ThreeNum);
-        resBean.setFourNum(FourNum);
+        for (int id : o_ids){
+            orgaSum.add(getMemCount(id));
+        }
+
+        resBean.setOrgaNames(orgaNames);
+        resBean.setOrgaMemCount(orgaSum);
+
+        try {
+            resBean.setMaleNum(getisMaleSum(true));
+            resBean.setFormaleNum(getisMaleSum(false));
+
+        } catch (PropertyVetoException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+
 
         return resBean;
+    }
+
+    public static int getMemCount(int o_id){
+        int num = 0;
+        try {
+            Connection conn = DataSourceConfiguration.getConnection();
+            String sql = "SELECT COUNT(*) FROM member where o_id = ?";
+            PreparedStatement pstmt = conn.prepareStatement(sql);
+
+            pstmt.setInt(1, o_id);
+            ResultSet resultSet = pstmt.executeQuery();
+            if (resultSet.next()){
+                num = resultSet.getInt(1);
+            }else {
+                num = 0;
+            }
+
+            resultSet.close();
+            pstmt.close();
+            conn.close();
+        } catch (PropertyVetoException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return num;
+    }
+
+    public static int getisMaleSum(boolean flag) throws PropertyVetoException, SQLException {
+        int num = 0;
+        Connection conn = DataSourceConfiguration.getConnection();
+        String sql = "SELECT COUNT(*) FROM stu WHERE sex = ";
+        if (flag){
+            sql = sql + "1";
+        }else {
+            sql = sql + "0";
+        }
+        Statement stmt = conn.createStatement();
+        ResultSet resultSet = stmt.executeQuery(sql);
+
+        if (resultSet.next()){
+            num = resultSet.getInt(1);
+        }else {
+            return -1;
+        }
+
+        return num;
     }
 
 }
