@@ -5,8 +5,6 @@ import bean.dataBuffer.OrgaLinkBean;
 import java.util.List;
 
 public class OrgaLinkListResBean {
-
-
     private int status;
     private String info;
     private List<OrgaLinkBean> data;

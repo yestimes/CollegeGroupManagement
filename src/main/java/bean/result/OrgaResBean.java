@@ -36,19 +36,18 @@ public class OrgaResBean {
 
     public void BeanFail(){
         setStatus(500);
-        setInfo("获取社团列表失败！");
+        setInfo("获取该社团失败！");
     }
 
     public void onOrgaNotFound(){
         setStatus(400);
-        setInfo("未找到该记录");
+        setInfo("未找到该记录");//有字段为空的
     }
 
-
-    public void AddSuccess(){
+    public void AddSuccess(int o_id){
         setStatus(200);
-        setInfo("创建成功！");
-        //setUrl("/groups?o_id="+o_id);
+        setInfo("Success!");
+        setUrl("/groups?o_id="+o_id);
     }
 
     public void AddFail(){
@@ -67,9 +66,10 @@ public class OrgaResBean {
     }
 
     public void onEditSuccess(int o_id){
+        this.
         setStatus(200);
         setInfo("修改成功！");
-        setUrl("/groups?o_id="+o_id);
+       // setUrl("/groups?o_id="+o_id);
     }
 
     public void EditFail(){

@@ -10,8 +10,8 @@ public class OrganizationBean {
     private String o_logo;
     private String o_description;
     //负责人及助理姓名
-    private String gma_name;
-    private String[] ga_names;
+    private String gma_name = "社团负责人空缺";
+    private String[] ga_names = {"助理空缺席","助理空缺席"};
 
     public void setO_id(int o_id) {
         this.o_id = o_id;

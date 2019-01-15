@@ -17,7 +17,7 @@ public class DataSourceConfiguration {
         ComboPooledDataSource dataSource = new ComboPooledDataSource();
 
         dataSource.setDriverClass("com.mysql.cj.jdbc.Driver");
-        dataSource.setJdbcUrl("jdbc:mysql://127.0.0.1:3306/group_db?characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true");
+        dataSource.setJdbcUrl("jdbc:mysql://127.0.0.1:3306/group_db?characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC");
         dataSource.setUser("groupdbu");
         dataSource.setPassword("admin234");
         // 关闭连接后不自动提交

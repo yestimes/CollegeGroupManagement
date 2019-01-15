@@ -1095,498 +1095,664 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <table id="274" parent="2" name="activity"/>
-    <table id="275" parent="2" name="assistant"/>
-    <table id="276" parent="2" name="college"/>
-    <table id="277" parent="2" name="groupmanager"/>
-    <table id="278" parent="2" name="member"/>
-    <table id="279" parent="2" name="o_t_interactive"/>
-    <table id="280" parent="2" name="organization"/>
-    <table id="281" parent="2" name="s_a_comment"/>
-    <table id="282" parent="2" name="s_o_comment"/>
-    <table id="283" parent="2" name="sa"/>
-    <table id="284" parent="2" name="stu"/>
-    <table id="285" parent="2" name="tag"/>
-    <table id="286" parent="2" name="userinfo"/>
-    <column id="287" parent="274" name="ac_id">
-      <Position>1</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="288" parent="274" name="ac_name">
-      <Position>2</Position>
-      <DataType>varchar(50)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="289" parent="274" name="ac_description">
-      <Position>3</Position>
-      <DataType>varchar(100)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="290" parent="274" name="o_id">
-      <Position>4</Position>
-      <DataType>int(11)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="291" parent="274" name="ac_limit">
-      <Position>5</Position>
-      <DataType>int(11)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="292" parent="274" name="ac_start_time">
-      <Position>6</Position>
-      <DataType>date|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="293" parent="274" name="ac_end_time">
-      <Position>7</Position>
-      <DataType>date|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <index id="294" parent="274" name="FK_Reference_13">
-      <ColNames>o_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="295" parent="274" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>ac_id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <foreign-key id="296" parent="274" name="FK_Reference_13">
-      <ColNames>o_id</ColNames>
-      <RefSchemaName>group_db</RefSchemaName>
-      <RefTableName>organization</RefTableName>
-      <RefColNames>o_id</RefColNames>
-    </foreign-key>
-    <column id="297" parent="275" name="s_id">
-      <Position>1</Position>
-      <DataType>varchar(20)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="298" parent="275" name="o_id">
-      <Position>2</Position>
-      <DataType>int(11)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <index id="299" parent="275" name="FK_Reference_11">
-      <ColNames>o_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="300" parent="275" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>s_id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <foreign-key id="301" parent="275" name="FK_Reference_3">
-      <ColNames>s_id</ColNames>
-      <RefSchemaName>group_db</RefSchemaName>
-      <RefTableName>stu</RefTableName>
-      <RefColNames>s_id</RefColNames>
-    </foreign-key>
-    <foreign-key id="302" parent="275" name="FK_Reference_11">
-      <ColNames>o_id</ColNames>
-      <RefSchemaName>group_db</RefSchemaName>
-      <RefTableName>organization</RefTableName>
-      <RefColNames>o_id</RefColNames>
-    </foreign-key>
-    <column id="303" parent="276" name="c_id">
-      <Position>1</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="304" parent="276" name="c_name">
-      <Position>2</Position>
-      <DataType>varchar(50)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <key id="305" parent="276" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>c_id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <column id="306" parent="277" name="s_id">
-      <Position>1</Position>
-      <DataType>varchar(20)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="307" parent="277" name="o_id">
-      <Position>2</Position>
-      <DataType>int(11)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <index id="308" parent="277" name="FK_Reference_10">
-      <ColNames>o_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="309" parent="277" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>s_id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <foreign-key id="310" parent="277" name="FK_Reference_2">
-      <ColNames>s_id</ColNames>
-      <RefSchemaName>group_db</RefSchemaName>
-      <RefTableName>stu</RefTableName>
-      <RefColNames>s_id</RefColNames>
-    </foreign-key>
-    <foreign-key id="311" parent="277" name="FK_Reference_10">
-      <ColNames>o_id</ColNames>
-      <RefSchemaName>group_db</RefSchemaName>
-      <RefTableName>organization</RefTableName>
-      <RefColNames>o_id</RefColNames>
-    </foreign-key>
-    <column id="312" parent="278" name="s_id">
-      <Position>1</Position>
-      <DataType>varchar(20)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="313" parent="278" name="o_id">
-      <Position>2</Position>
-      <DataType>int(11)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <index id="314" parent="278" name="FK_Reference_9">
-      <ColNames>o_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="315" parent="278" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>s_id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <foreign-key id="316" parent="278" name="FK_Reference_4">
-      <ColNames>s_id</ColNames>
-      <RefSchemaName>group_db</RefSchemaName>
-      <RefTableName>stu</RefTableName>
-      <RefColNames>s_id</RefColNames>
-    </foreign-key>
-    <foreign-key id="317" parent="278" name="FK_Reference_9">
-      <ColNames>o_id</ColNames>
-      <RefSchemaName>group_db</RefSchemaName>
-      <RefTableName>organization</RefTableName>
-      <RefColNames>o_id</RefColNames>
-    </foreign-key>
-    <column id="318" parent="279" name="o_t_index">
-      <Position>1</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="319" parent="279" name="o_id">
-      <Position>2</Position>
-      <DataType>int(11)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="320" parent="279" name="t_id">
-      <Position>3</Position>
-      <DataType>int(11)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="321" parent="279" name="count">
-      <Position>4</Position>
-      <DataType>int(11)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <index id="322" parent="279" name="FK_Reference_15">
-      <ColNames>o_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <index id="323" parent="279" name="FK_Reference_14">
-      <ColNames>t_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="324" parent="279" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>o_t_index</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <foreign-key id="325" parent="279" name="FK_Reference_15">
-      <ColNames>o_id</ColNames>
-      <RefSchemaName>group_db</RefSchemaName>
-      <RefTableName>organization</RefTableName>
-      <RefColNames>o_id</RefColNames>
-    </foreign-key>
-    <foreign-key id="326" parent="279" name="FK_Reference_14">
-      <ColNames>t_id</ColNames>
-      <RefSchemaName>group_db</RefSchemaName>
-      <RefTableName>tag</RefTableName>
-      <RefColNames>t_id</RefColNames>
-    </foreign-key>
-    <column id="327" parent="280" name="o_id">
+    <table id="274" parent="2" name="actiapply"/>
+    <table id="275" parent="2" name="acticonf"/>
+    <table id="276" parent="2" name="activity"/>
+    <table id="277" parent="2" name="apply"/>
+    <table id="278" parent="2" name="assistant"/>
+    <table id="279" parent="2" name="college"/>
+    <table id="280" parent="2" name="groupmanager"/>
+    <table id="281" parent="2" name="member"/>
+    <table id="282" parent="2" name="o_t_interactive"/>
+    <table id="283" parent="2" name="organization"/>
+    <table id="284" parent="2" name="s_a_comment"/>
+    <table id="285" parent="2" name="s_o_comment"/>
+    <table id="286" parent="2" name="sa"/>
+    <table id="287" parent="2" name="stu"/>
+    <table id="288" parent="2" name="tag"/>
+    <table id="289" parent="2" name="userinfo"/>
+    <column id="290" parent="274" name="ap_index">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="328" parent="280" name="o_name">
-      <Position>2</Position>
-      <DataType>varchar(50)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="329" parent="280" name="o_create_time">
-      <Position>3</Position>
-      <DataType>date|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="330" parent="280" name="o_logo">
-      <Position>4</Position>
-      <DataType>varchar(100)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="331" parent="280" name="o_description">
-      <Position>5</Position>
-      <DataType>varchar(100)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <key id="332" parent="280" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>o_id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <column id="333" parent="281" name="s_a_index">
-      <Position>1</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="334" parent="281" name="s_a_id">
+    <column id="291" parent="274" name="ac_id">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="335" parent="281" name="ac_id">
+    <column id="292" parent="274" name="s_id">
       <Position>3</Position>
-      <DataType>int(11)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="336" parent="281" name="s_id">
-      <Position>4</Position>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="337" parent="281" name="s_a_comment">
-      <Position>5</Position>
-      <DataType>varchar(100)|0s</DataType>
+    <column id="293" parent="274" name="status">
+      <Position>4</Position>
+      <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="338" parent="281" name="s_a_comment_time">
-      <Position>6</Position>
-      <DataType>date|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <index id="339" parent="281" name="FK_Reference_5">
+    <index id="294" parent="274" name="FK_Reference_29">
       <ColNames>ac_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="340" parent="281" name="FK_Reference_8">
+    <index id="295" parent="274" name="FK_Reference_30">
       <ColNames>s_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="341" parent="281" name="PRIMARY">
+    <key id="296" parent="274" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>s_a_index</ColNames>
+      <ColNames>ap_index</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="342" parent="281" name="FK_Reference_5">
+    <foreign-key id="297" parent="274" name="FK_Reference_29">
       <ColNames>ac_id</ColNames>
       <RefSchemaName>group_db</RefSchemaName>
       <RefTableName>activity</RefTableName>
       <RefColNames>ac_id</RefColNames>
     </foreign-key>
-    <foreign-key id="343" parent="281" name="FK_Reference_8">
+    <foreign-key id="298" parent="274" name="FK_Reference_30">
       <ColNames>s_id</ColNames>
       <RefSchemaName>group_db</RefSchemaName>
       <RefTableName>stu</RefTableName>
       <RefColNames>s_id</RefColNames>
     </foreign-key>
-    <column id="344" parent="282" name="s_o_index">
+    <column id="299" parent="275" name="conf_index">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="345" parent="282" name="s_o_id">
+    <column id="300" parent="275" name="ac_id">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="346" parent="282" name="o_id">
+    <column id="301" parent="275" name="c_id">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="347" parent="282" name="s_id">
+    <column id="302" parent="275" name="switch">
       <Position>4</Position>
-      <DataType>varchar(20)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="348" parent="282" name="s_o_comment">
-      <Position>5</Position>
-      <DataType>varchar(100)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="349" parent="282" name="s_o_comment_time">
-      <Position>6</Position>
-      <DataType>date|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <index id="350" parent="282" name="FK_Reference_6">
-      <ColNames>o_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <index id="351" parent="282" name="FK_Reference_7">
-      <ColNames>s_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="352" parent="282" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>s_o_index</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <foreign-key id="353" parent="282" name="FK_Reference_6">
-      <ColNames>o_id</ColNames>
-      <RefSchemaName>group_db</RefSchemaName>
-      <RefTableName>organization</RefTableName>
-      <RefColNames>o_id</RefColNames>
-    </foreign-key>
-    <foreign-key id="354" parent="282" name="FK_Reference_7">
-      <ColNames>s_id</ColNames>
-      <RefSchemaName>group_db</RefSchemaName>
-      <RefTableName>stu</RefTableName>
-      <RefColNames>s_id</RefColNames>
-    </foreign-key>
-    <column id="355" parent="283" name="sa_index">
-      <Position>1</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="356" parent="283" name="s_id">
-      <Position>2</Position>
-      <DataType>varchar(20)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <index id="357" parent="283" name="FK_Reference_1">
-      <ColNames>s_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="358" parent="283" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>sa_index</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <foreign-key id="359" parent="283" name="FK_Reference_1">
-      <ColNames>s_id</ColNames>
-      <RefSchemaName>group_db</RefSchemaName>
-      <RefTableName>stu</RefTableName>
-      <RefColNames>s_id</RefColNames>
-    </foreign-key>
-    <column id="360" parent="284" name="s_id">
-      <Position>1</Position>
-      <DataType>varchar(20)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="361" parent="284" name="password">
-      <Position>2</Position>
-      <DataType>varchar(50)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="362" parent="284" name="s_name">
-      <Position>3</Position>
-      <DataType>varchar(50)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="363" parent="284" name="nickname">
-      <Position>4</Position>
-      <DataType>varchar(50)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="364" parent="284" name="sex">
-      <Position>5</Position>
-      <DataType>smallint(6)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="365" parent="284" name="c_id">
-      <Position>6</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="366" parent="284" name="email">
-      <Position>7</Position>
-      <DataType>varchar(50)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <index id="367" parent="284" name="FK_Reference_12">
+    <index id="303" parent="275" name="FK_Reference_18">
+      <ColNames>ac_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="304" parent="275" name="FK_Reference_19">
       <ColNames>c_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="368" parent="284" name="PRIMARY">
+    <key id="305" parent="275" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>s_id</ColNames>
+      <ColNames>conf_index</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="369" parent="284" name="FK_Reference_12">
+    <foreign-key id="306" parent="275" name="FK_Reference_18">
+      <ColNames>ac_id</ColNames>
+      <RefSchemaName>group_db</RefSchemaName>
+      <RefTableName>activity</RefTableName>
+      <RefColNames>ac_id</RefColNames>
+    </foreign-key>
+    <foreign-key id="307" parent="275" name="FK_Reference_19">
       <ColNames>c_id</ColNames>
       <RefSchemaName>group_db</RefSchemaName>
       <RefTableName>college</RefTableName>
       <RefColNames>c_id</RefColNames>
     </foreign-key>
-    <column id="370" parent="285" name="t_id">
+    <column id="308" parent="276" name="ac_id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="309" parent="276" name="o_id">
+      <Position>2</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="310" parent="276" name="ac_name">
+      <Position>3</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="311" parent="276" name="ac_description">
+      <Position>4</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="312" parent="276" name="ac_start_time">
+      <Position>5</Position>
+      <DataType>date|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="313" parent="276" name="ac_end_time">
+      <Position>6</Position>
+      <DataType>date|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="314" parent="276" name="FK_Reference_27">
+      <ColNames>o_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="315" parent="276" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ac_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="316" parent="276" name="FK_Reference_27">
+      <ColNames>o_id</ColNames>
+      <RefSchemaName>group_db</RefSchemaName>
+      <RefTableName>organization</RefTableName>
+      <RefColNames>o_id</RefColNames>
+    </foreign-key>
+    <column id="317" parent="277" name="s_id">
+      <Position>1</Position>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="318" parent="277" name="o_id">
+      <Position>2</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="319" parent="277" name="level">
+      <Position>3</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="320" parent="277" name="status">
+      <Position>4</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="321" parent="277" name="FK_Reference_21">
+      <ColNames>o_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="322" parent="277" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>s_id
+o_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="323" parent="277" name="FK_Reference_20">
+      <ColNames>s_id</ColNames>
+      <RefSchemaName>group_db</RefSchemaName>
+      <RefTableName>stu</RefTableName>
+      <RefColNames>s_id</RefColNames>
+    </foreign-key>
+    <foreign-key id="324" parent="277" name="FK_Reference_21">
+      <ColNames>o_id</ColNames>
+      <RefSchemaName>group_db</RefSchemaName>
+      <RefTableName>organization</RefTableName>
+      <RefColNames>o_id</RefColNames>
+    </foreign-key>
+    <column id="325" parent="278" name="as_index">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="326" parent="278" name="s_id">
+      <Position>2</Position>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="327" parent="278" name="o_id">
+      <Position>3</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="328" parent="278" name="FK_Reference_3">
+      <ColNames>s_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="329" parent="278" name="FK_Reference_28">
+      <ColNames>o_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="330" parent="278" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>as_index</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="331" parent="278" name="FK_Reference_3">
+      <ColNames>s_id</ColNames>
+      <RefSchemaName>group_db</RefSchemaName>
+      <RefTableName>stu</RefTableName>
+      <RefColNames>s_id</RefColNames>
+    </foreign-key>
+    <foreign-key id="332" parent="278" name="FK_Reference_28">
+      <ColNames>o_id</ColNames>
+      <RefSchemaName>group_db</RefSchemaName>
+      <RefTableName>organization</RefTableName>
+      <RefColNames>o_id</RefColNames>
+    </foreign-key>
+    <column id="333" parent="279" name="c_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="371" parent="285" name="t_name">
+    <column id="334" parent="279" name="c_name">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="372" parent="285" name="PRIMARY">
+    <key id="335" parent="279" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>t_id</ColNames>
+      <ColNames>c_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="373" parent="286" name="nickname">
+    <column id="336" parent="280" name="gm_index">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="337" parent="280" name="s_id">
+      <Position>2</Position>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="338" parent="280" name="o_id">
+      <Position>3</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="339" parent="280" name="FK_Reference_2">
+      <ColNames>s_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="340" parent="280" name="FK_Reference_24">
+      <ColNames>o_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="341" parent="280" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>gm_index</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="342" parent="280" name="FK_Reference_2">
+      <ColNames>s_id</ColNames>
+      <RefSchemaName>group_db</RefSchemaName>
+      <RefTableName>stu</RefTableName>
+      <RefColNames>s_id</RefColNames>
+    </foreign-key>
+    <foreign-key id="343" parent="280" name="FK_Reference_24">
+      <ColNames>o_id</ColNames>
+      <RefSchemaName>group_db</RefSchemaName>
+      <RefTableName>organization</RefTableName>
+      <RefColNames>o_id</RefColNames>
+    </foreign-key>
+    <column id="344" parent="281" name="me_index">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="345" parent="281" name="s_id">
+      <Position>2</Position>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="346" parent="281" name="o_id">
+      <Position>3</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="347" parent="281" name="FK_Reference_4">
+      <ColNames>s_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="348" parent="281" name="FK_Reference_26">
+      <ColNames>o_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="349" parent="281" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>me_index</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="350" parent="281" name="FK_Reference_4">
+      <ColNames>s_id</ColNames>
+      <RefSchemaName>group_db</RefSchemaName>
+      <RefTableName>stu</RefTableName>
+      <RefColNames>s_id</RefColNames>
+    </foreign-key>
+    <foreign-key id="351" parent="281" name="FK_Reference_26">
+      <ColNames>o_id</ColNames>
+      <RefSchemaName>group_db</RefSchemaName>
+      <RefTableName>organization</RefTableName>
+      <RefColNames>o_id</RefColNames>
+    </foreign-key>
+    <column id="352" parent="282" name="o_t_index">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="353" parent="282" name="t_id">
+      <Position>2</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="354" parent="282" name="o_id">
+      <Position>3</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="355" parent="282" name="FK_Reference_14">
+      <ColNames>t_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="356" parent="282" name="FK_Reference_25">
+      <ColNames>o_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="357" parent="282" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>o_t_index</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="358" parent="282" name="FK_Reference_14">
+      <ColNames>t_id</ColNames>
+      <RefSchemaName>group_db</RefSchemaName>
+      <RefTableName>tag</RefTableName>
+      <RefColNames>t_id</RefColNames>
+    </foreign-key>
+    <foreign-key id="359" parent="282" name="FK_Reference_25">
+      <ColNames>o_id</ColNames>
+      <RefSchemaName>group_db</RefSchemaName>
+      <RefTableName>organization</RefTableName>
+      <RefColNames>o_id</RefColNames>
+    </foreign-key>
+    <column id="360" parent="283" name="o_id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="361" parent="283" name="o_name">
+      <Position>2</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="362" parent="283" name="o_create_time">
+      <Position>3</Position>
+      <DataType>date|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="363" parent="283" name="o_logo">
+      <Position>4</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="364" parent="283" name="o_description">
+      <Position>5</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="365" parent="283" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>o_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="366" parent="284" name="s_a_index">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="367" parent="284" name="ac_id">
+      <Position>2</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="368" parent="284" name="s_id">
+      <Position>3</Position>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="369" parent="284" name="s_a_comment">
+      <Position>4</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="370" parent="284" name="s_a_comment_time">
+      <Position>5</Position>
+      <DataType>date|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="371" parent="284" name="FK_Reference_5">
+      <ColNames>ac_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="372" parent="284" name="FK_Reference_8">
+      <ColNames>s_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="373" parent="284" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>s_a_index</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="374" parent="284" name="FK_Reference_5">
+      <ColNames>ac_id</ColNames>
+      <RefSchemaName>group_db</RefSchemaName>
+      <RefTableName>activity</RefTableName>
+      <RefColNames>ac_id</RefColNames>
+    </foreign-key>
+    <foreign-key id="375" parent="284" name="FK_Reference_8">
+      <ColNames>s_id</ColNames>
+      <RefSchemaName>group_db</RefSchemaName>
+      <RefTableName>stu</RefTableName>
+      <RefColNames>s_id</RefColNames>
+    </foreign-key>
+    <column id="376" parent="285" name="s_o_index">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="377" parent="285" name="s_id">
+      <Position>2</Position>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="378" parent="285" name="o_id">
+      <Position>3</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="379" parent="285" name="s_o_comment">
+      <Position>4</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="380" parent="285" name="s_o_comment_time">
+      <Position>5</Position>
+      <DataType>date|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="381" parent="285" name="FK_Reference_7">
+      <ColNames>s_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="382" parent="285" name="FK_Reference_23">
+      <ColNames>o_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="383" parent="285" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>s_o_index</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="384" parent="285" name="FK_Reference_7">
+      <ColNames>s_id</ColNames>
+      <RefSchemaName>group_db</RefSchemaName>
+      <RefTableName>stu</RefTableName>
+      <RefColNames>s_id</RefColNames>
+    </foreign-key>
+    <foreign-key id="385" parent="285" name="FK_Reference_23">
+      <ColNames>o_id</ColNames>
+      <RefSchemaName>group_db</RefSchemaName>
+      <RefTableName>organization</RefTableName>
+      <RefColNames>o_id</RefColNames>
+    </foreign-key>
+    <column id="386" parent="286" name="sa_index">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="387" parent="286" name="s_id">
+      <Position>2</Position>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="388" parent="286" name="FK_Reference_1">
+      <ColNames>s_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="389" parent="286" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>sa_index</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="390" parent="286" name="FK_Reference_1">
+      <ColNames>s_id</ColNames>
+      <RefSchemaName>group_db</RefSchemaName>
+      <RefTableName>stu</RefTableName>
+      <RefColNames>s_id</RefColNames>
+    </foreign-key>
+    <column id="391" parent="287" name="s_id">
       <Position>1</Position>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="374" parent="286" name="s_id">
+    <column id="392" parent="287" name="password">
       <Position>2</Position>
-      <DataType>varchar(20)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="375" parent="286" name="classroom">
-      <Position>3</Position>
-      <DataType>varchar(20)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="376" parent="286" name="photo">
-      <Position>4</Position>
-      <DataType>varchar(20)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="377" parent="286" name="usersign">
-      <Position>5</Position>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="378" parent="286" name="PRIMARY">
+    <column id="393" parent="287" name="s_name">
+      <Position>3</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="394" parent="287" name="sex">
+      <Position>4</Position>
+      <DataType>smallint(6)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="395" parent="287" name="c_id">
+      <Position>5</Position>
+      <DataType>int(11)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="396" parent="287" name="nickname">
+      <Position>6</Position>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="397" parent="287" name="email">
+      <Position>7</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="398" parent="287" name="FK_Reference_12">
+      <ColNames>c_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="399" parent="287" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>s_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="379" parent="286" name="FK_Reference_16">
+    <foreign-key id="400" parent="287" name="FK_Reference_12">
+      <ColNames>c_id</ColNames>
+      <RefSchemaName>group_db</RefSchemaName>
+      <RefTableName>college</RefTableName>
+      <RefColNames>c_id</RefColNames>
+    </foreign-key>
+    <column id="401" parent="288" name="t_id">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="402" parent="288" name="t_name">
+      <Position>2</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="403" parent="288" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>t_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="404" parent="289" name="user_index">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="405" parent="289" name="nickname">
+      <Position>2</Position>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="406" parent="289" name="s_id">
+      <Position>3</Position>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="407" parent="289" name="classroom">
+      <Position>4</Position>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="408" parent="289" name="photo">
+      <Position>5</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="409" parent="289" name="usersign">
+      <Position>6</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="410" parent="289" name="FK_Reference_22">
+      <ColNames>s_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="411" parent="289" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>user_index</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="412" parent="289" name="FK_Reference_22">
       <ColNames>s_id</ColNames>
       <RefSchemaName>group_db</RefSchemaName>
       <RefTableName>stu</RefTableName>

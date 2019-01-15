@@ -12,11 +12,11 @@ import java.util.Properties;
 public class SendMail {
 
 	// 发件人的邮箱账号如：xxx@qq.com
-	public static String sendEmailAccount = "yestimes@yandex.com";
+	public static String sendEmailAccount = "yexufang@163.com";
 	// 发件人的邮箱的授权码(自己在邮箱服务器中开启并设置)
-	public static String sendEmailPassword = "420881314Ye";
+	public static String sendEmailPassword = "3761775Ye";
 	// 发件人邮箱的SMTP服务器地址，如：smtp.qq.com
-	public static String sendEmailSMTPHost = "smtp.yandex.com";
+	public static String sendEmailSMTPHost = "smtp.163.com";
 	// 收件人的邮箱账号
 	public static String receiveMailAccount = "";
 

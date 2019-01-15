@@ -9,7 +9,7 @@
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 		<!--font-family-->
 		<!-- TITLE OF SITE -->
-		<title>Travel</title>
+		<title>社团</title>
 
 		<!-- favicon img -->
 		<link rel="shortcut icon" type="images/icon" href="logo/favicon.png"/>
@@ -54,6 +54,7 @@
 		<![endif]-->
 		<script src="lib/jquery.js"></script>
 		 		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
 
 		 		<!--modernizr.min.js-->
 	<script  src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -78,7 +79,9 @@
 		 		<!--Custom js-->
   <script src="lib/custom.js"></script>
 
-	<script src="js/init.js"></script>
+	<script src="../../../../../../../Documents/Tencent%20Files/616067754/FileRecv/js/init.js"></script>
+	<script src="js/addOrgaComm.js"></script>
+	<script src="js/addTag.js"></script>
 
 
 	</head>
@@ -144,11 +147,12 @@
 							<div class="single-about-us">
 								<div class="about-us-txt">
 									<h2 id="org-name-box">
-										远风社
+
 									</h2>
 									<h2 id="org-desc-box">
-										远风社
+
 									</h2>
+
 									<div class="about-btn">
 										<button  class="about-view">
 											立即加入
@@ -423,14 +427,14 @@
 									<i class="fa fa-quote-left" aria-hidden="true"></i>
 								</span>
 								<p>
-									Lorem ipsum dolor sit amet, contur adip elit, sed do mod incid ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+									社团很温暖，像个大家庭！
 								</p>
 								<h3>
 									<a href="#">
-										kevin watson
+										药儿
 									</a>
 								</h3>
-								<h4>london, england</h4>
+								<h4>北京</h4>
 							</div><!--/.home1-testm-txt-->
 						</div><!--/.home1-testm-single-->
 
@@ -446,14 +450,14 @@
 									<i class="fa fa-quote-left" aria-hidden="true"></i>
 								</span>
 								<p>
-									Lorem ipsum dolor sit amet, contur adip elit, sed do mod incid ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+									丰富课余生活，找到志同道合的朋友。
 								</p>
 								<h3>
 									<a href="#">
-										kevin watson
+										小雨
 									</a>
 								</h3>
-								<h4>london, england</h4>
+								<h4>深圳</h4>
 							</div><!--/.home1-testm-txt-->
 						</div><!--/.home1-testm-single-->
 
@@ -469,14 +473,14 @@
 									<i class="fa fa-quote-left" aria-hidden="true"></i>
 								</span>
 								<p>
-									Lorem ipsum dolor sit amet, contur adip elit, sed do mod incid ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+									感受社团文化！
 								</p>
 								<h3>
 									<a href="#">
-										kevin watson
+										清歌
 									</a>
 								</h3>
-								<h4>london, england</h4>
+								<h4>上海</h4>
 							</div><!--/.home1-testm-txt-->
 						</div><!--/.home1-testm-single-->
 
@@ -492,8 +496,7 @@
 									<i class="fa fa-quote-left" aria-hidden="true"></i>
 								</span>
 								<p>
-									Lorem ipsum dolor sit amet, contur adip elit, sed do mod incid ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-								</p>
+									It is nice to meet you!
 								<h3>
 									<a href="#">
 										kevin watson
@@ -526,50 +529,22 @@
 									<div class="packages-para special-offer-para">
 
 
-										<form id="S_O_CommentForm" role="form">
+										<form id="S_O_CommentForm" role="form" action = "#">
 										  <div class="form-group">
-										    <textarea name="s_o_comment" class="form-control" rows="3"></textarea>
+										    <textarea id="s_o_comment" name="s_o_comment" class="form-control" rows="3"></textarea>
 										  </div>
+											<input type="hidden" name="o_id" id="o-id" value="">
 										</form>
-
-										<script type="text/javascript">
-
-											function login() {
-											    $.ajax({
-											        //几个参数需要注意一下
-											        type: "POST",//方法类型
-											        dataType: "json",//预期服务器返回的数据类型
-											        url: "/S_O_C_Add" ,//url
-											        data: $('#S_O_CommentForm').serialize(),
-											        success: function (result) {
-											            console.log(result);//打印服务端返回的数据(调试用)
-											            if (result.status == 200) {
-											                alert("留言成功！");
-											            }
-											            else {
-											                alert(result.info);
-											            }
-
-											        },
-											        error : function(res) {
-											            console.log(res)
-											            alert("异常！");
-											        }
-											    });
-											}
-
-										</script>
-
 
 									</div><!--/.packages-para-->
 									<div class="offer-btn-group">
 										<div class="about-btn">
-											<button  class="about-view packages-btn offfer-btn">
+											<button  class="about-view packages-btn offfer-btn" onclick="reset()">
 												重置
 											</button>
 										</div><!--/.about-btn-->
 										<div class="about-btn">
-											<button  class="about-view packages-btn">
+											<button  class="about-view packages-btn" onclick="AddOrgaComm()">
 												提交
 											</button>
 										</div><!--/.about-btn-->
@@ -577,6 +552,14 @@
 								</div><!--/.single-special-offer-txt-->
 							</div><!--/.single-special-offer-->
 						</div><!--/.col-->
+
+						<script type="javascript">
+							function reset() {
+								$("#s_o_comment").val("");
+							}
+
+						</script>
+
 						<div class="col-sm-4">
 							<div class="single-special-offer">
 								<div class="single-special-offer-bg">
@@ -584,6 +567,32 @@
 								</div><!--/.single-special-offer-bg-->
 								<div class="single-special-shape-txt">
 									<h3>印象标签</h3>
+
+									<form id="TagForm" role="form" action = "#">
+										<div class="radio">
+											<label><input name="t_id" type = "radio" value="1">文艺小暖</label>
+											<br>
+											<label><input name="t_id" type = "radio" value="2">科技前沿</label>
+											<br>
+											<label><input name="t_id" type = "radio" value="3">国风美少年</label>
+											<br>
+											<label><input name="t_id" type = "radio" value="4">聆听MUSIC</label>
+											<br>
+											<label><input name="t_id" type = "radio" value="5">活动精彩</label>
+											<br>
+											<label><input name="t_id" type = "radio" value="6">背包客</label>
+											<br>
+											<label><input name="t_id" type = "radio" value="7">街头艺术</label>
+											<br>
+											<label><input name="t_id" type = "radio" value="8">人文底蕴</label>
+										</div>
+
+										<input type="hidden" name="o_id_again" id="o-id-again" value="">
+									</form>
+
+									<button class="about-view packages-btn offfer-btn" onclick="AddTag()">
+										添加标签
+									</button>
 
 								</div><!--/.single-special-shape-txt-->
 							</div><!--/.single-special-offer-->
@@ -738,9 +747,6 @@
 
 		</footer><!-- /.footer-copyright-->
 		<!-- footer-copyright end -->
-
-
-
 
 
 
