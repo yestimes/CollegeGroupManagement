@@ -24,10 +24,10 @@ public class DeleteOrgaCommServlet extends HttpServlet {
         int result = OrgaCommDao.DeleteOrgaComm(s_o_index);
         //不管删除成功与否，都重定向到删除html
         if (result > 0){
-            response.sendRedirect("/admin/CommList.html");
+            response.sendRedirect("/OrgaPane/com-list.html");
         }
         else{
-            response.sendRedirect("/admin/CommList.html");
+            response.sendRedirect("/OrgaPane/com-list.html");
         }
 
     }

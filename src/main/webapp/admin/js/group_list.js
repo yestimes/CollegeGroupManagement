@@ -30,7 +30,7 @@ $(document).ready(function () {
             var nameLink = document.createElement("a");
             nameLink.className += "cssclass";
             nameLink.innerHTML = res.data[i].o_name;
-            nameLink.setAttribute("href","/groups?o_id=" + + res.data[i].o_id);
+            nameLink.setAttribute("href","/OrgaPaneCenter?o_id=" + + res.data[i].o_id);
 
             sortedList.appendChild(iconSpan);
             sortedList.appendChild(nameLink);

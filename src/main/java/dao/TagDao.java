@@ -63,6 +63,7 @@ public class TagDao {
     //返回一个resBean结果集
     public static TagResBean AddTagRes(OTBean bean){
         TagResBean resBean = new TagResBean();
+        System.out.println("func::add-> t_ud" + bean.getT_id());
 
         if (validate(bean)){//保证这个bean各字段都不为空
             if (isTidExist(bean.getT_id())){//保证插入的这个标签在标签库中

@@ -1,6 +1,7 @@
 package controller.tag;
 
 import bean.info.OTBean;
+import bean.info.StudentBean;
 import bean.result.TagResBean;
 import dao.TagDao;
 import utils.JsonUtils;
@@ -16,8 +17,9 @@ import java.io.IOException;
 public class TagAddServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("application/json;charset=utf-8");
-        String s_id = (String) request.getSession().getAttribute("s_id");//获得session中的s_id
-        String o_id1 = request.getParameter("o_id");
+        StudentBean userInfo = (StudentBean) request.getSession().getAttribute("userInfo");//获得session中的s_id
+        String s_id = userInfo.getSid();
+        String o_id1 = request.getParameter("o_id_again");
         int o_id = 0;
         if (o_id1 != null && !("".equals(o_id1))){
             o_id = Integer.parseInt(o_id1);//获得社团号

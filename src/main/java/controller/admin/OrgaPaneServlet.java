@@ -4,6 +4,7 @@ import bean.info.OrganizationBean;
 import bean.info.StudentBean;
 import dao.organization.OrgaPaneDao;
 import dao.organization.OrganizationDao;
+import utils.ArgsCheck;
 
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -49,7 +50,15 @@ public class OrgaPaneServlet extends HttpServlet {
                 response.sendRedirect("/OrgaPane/index.html");
                 //准备json
             }else if (level == 3) {
-                response.sendRedirect("/admin/index.html");
+                String required_o_id = request.getParameter("o_id");
+                if (ArgsCheck.isStringArgsCorrect(required_o_id)){
+                    OrganizationBean orgaInfo = OrganizationDao.getOrgaInfo(Integer.parseInt(required_o_id));
+                    request.getSession().setAttribute("orgaInfo", orgaInfo);
+                    response.sendRedirect("/OrgaPane/index.html");
+
+                }else {
+                    response.sendRedirect("/admin/index.html");
+                }
             }else {
                 response.sendError(403);
             }

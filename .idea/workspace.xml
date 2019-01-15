@@ -6,10 +6,21 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99bbc54b-faf5-46b0-a1e7-2bd94ee61921" name="Default" comment="add group's main page">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/IndexInitServlet.java" afterDir="false" />
+    <list default="true" id="99bbc54b-faf5-46b0-a1e7-2bd94ee61921" name="Default" comment="fix some bugs">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/group/js/applyGroup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/762ade30-15c0-4009-a74d-c8168df1c0f4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/762ade30-15c0-4009-a74d-c8168df1c0f4.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/group/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/group/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/admin/OrgaPaneServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/admin/OrgaPaneServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/orgaComm/DeleteOrgaCommServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/orgaComm/DeleteOrgaCommServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/tag/TagAddServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/tag/TagAddServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/TagDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/TagDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/OrgaPane/com-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/com-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/OrgaPane/groupInfo-edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/groupInfo-edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/OrgaPane/groups.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/groups.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/OrgaPane/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/js/OrgaCommTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/OrgaPane/js/OrgaCommTable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/js/group_list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin/js/group_list.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -54,6 +65,20 @@
         <item name="localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="group_db: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="o_t_interactive: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="group_db: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="sa: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="group_db: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="stu: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
@@ -62,10 +87,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/activity/ActiAddServlet.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/orgaComm/DeleteOrgaCommServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="23" column="69" selection-start-line="23" selection-start-column="69" selection-end-line="23" selection-end-column="69" />
+            <state relative-caret-position="439">
+              <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -74,60 +99,83 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/IndexInitServlet.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/tag/TagAddServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="27" column="66" selection-start-line="27" selection-start-column="66" selection-end-line="27" selection-end-column="66" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="316">
+              <caret line="38" column="30" lean-forward="true" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dao/TagDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/group/js/init.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/group/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
+        <entry file="das://762ade30-15c0-4009-a74d-c8168df1c0f4/schema/group_db/table/tag">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/admin/OrgaPaneServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="55" column="76" lean-forward="true" selection-start-line="55" selection-start-column="76" selection-end-line="55" selection-end-column="76" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/login.html">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/groups.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="21" column="29" lean-forward="true" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/register.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/user-info.html">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/js/group_list.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="38" column="42" lean-forward="true" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/OrgaPane/index.html">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="103" column="131" selection-start-line="103" selection-start-column="131" selection-end-line="103" selection-end-column="131" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://762ade30-15c0-4009-a74d-c8168df1c0f4/schema/group_db/table/sa">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-114" />
+            <state relative-caret-position="285">
+              <caret line="111" column="107" lean-forward="true" selection-start-line="111" selection-start-column="107" selection-end-line="111" selection-end-column="107" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -155,6 +203,8 @@
       <find>403</find>
       <find>400</find>
       <find>SimpleDateFormat</find>
+      <find>退出</find>
+      <find>../../../../../../../Documents/Tencent%20Files/616067754/FileRecv/</find>
     </findStrings>
     <replaceStrings>
       <replace>vendors</replace>
@@ -170,14 +220,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/controller/OrgaComm/OrgaListServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/user/LoginServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/user/PersonInfoDao.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
-        <option value="$PROJECT_DIR$/src/main/java/bean/result/OrgaListResBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/organization/OrgaListServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/DeleteOrgaCommServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/OrgaCommDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/organization/OrgaSetServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/organization/OrgaLoadServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/initial/OrgaPaneInitServlet.java" />
@@ -193,15 +235,12 @@
         <option value="$PROJECT_DIR$/src/main/java/controller/organization/SeekOrgaServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/organization/OrgaSeekServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/tag/TagAddServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/tag/TagListServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/StatisInfoServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/orgaComm/AddOrgaCommServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/orgaComm/DeleteOrgaCommServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/orgaComm/OrgaCommAddServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/orgaComm/OrgaCommListServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/apply/ApplyAcceptServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/admin/OrgaPaneServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/admin/OrgaPaneInitServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/admin/OrgaGmLoad.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/admin/OrgaGmListServlet.java" />
@@ -221,6 +260,17 @@
         <option value="$PROJECT_DIR$/src/main/java/controller/activity/ActiAddServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/IndexInitServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/group/index.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/OrgaPane/CommList.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/OrgaPane/groupInfo-edit.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/OrgaPane/groups.html" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/admin/OrgaPaneServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/admin/js/group_list.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/admin/index.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/OrgaPane/index.html" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/orgaComm/DeleteOrgaCommServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/tag/TagAddServlet.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/TagDao.java" />
       </list>
     </option>
   </component>
@@ -273,23 +323,6 @@
             <path>
               <item name="day0101_loginServer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="loginServer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="day0101_loginServer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="loginServer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="artifacts" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="day0101_loginServer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="loginServer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="dataSources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="day0101_loginServer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="loginServer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
@@ -316,6 +349,23 @@
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="bean" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="day0101_loginServer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="loginServer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="bean" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="result" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="day0101_loginServer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="loginServer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="controller" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
@@ -324,7 +374,26 @@
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="dao" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="controller" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="day0101_loginServer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="loginServer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="controller" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="orgaComm" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="day0101_loginServer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="loginServer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="controller" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="tag" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="day0101_loginServer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
@@ -347,15 +416,7 @@
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="webapp" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="group" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="day0101_loginServer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="loginServer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="webapp" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="group" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="js" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
@@ -365,6 +426,15 @@
               <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="webapp" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="OrgaPane" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="day0101_loginServer" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="loginServer" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="webapp" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="OrgaPane" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="js" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -388,19 +458,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\John\source\ideaProject\day0101_loginServer\src\main\java\bean\info" />
-      <recent name="C:\Users\John\source\ideaProject\day0101_loginServer\src\main\webapp\admin\js" />
-      <recent name="C:\Users\John\source\ideaProject\day0101_loginServer\src\main\java\bean\dataBuffer" />
-      <recent name="C:\Users\John\source\ideaProject\day0101_loginServer\src\main\java\dao" />
-      <recent name="C:\Users\John\source\ideaProject\day0101_loginServer\src\main\webapp" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\John\source\ideaProject\day0101_loginServer\src\main\webapp\OrgaPane\js" />
       <recent name="C:\Users\John\source\ideaProject\day0101_loginServer\src\main\java\controller" />
       <recent name="C:\Users\John\source\ideaProject\day0101_loginServer\src\main\webapp\group" />
       <recent name="C:\Users\John\source\ideaProject\day0101_loginServer\src\main\webapp\admin" />
       <recent name="C:\Users\John\source\ideaProject\day0101_loginServer\src\main\webapp\group\js" />
-      <recent name="C:\Users\John\source\ideaProject\day0101_loginServer\src\main\webapp" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\John\source\ideaProject\day0101_loginServer\src\main\webapp\OrgaPane" />
+      <recent name="C:\Users\John\source\ideaProject\day0101_loginServer\src\main\webapp\group\js" />
+      <recent name="C:\Users\John\source\ideaProject\day0101_loginServer\src\main\java\bean\info" />
+      <recent name="C:\Users\John\source\ideaProject\day0101_loginServer\src\main\webapp\admin\js" />
+      <recent name="C:\Users\John\source\ideaProject\day0101_loginServer\src\main\java\bean\dataBuffer" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -571,7 +641,7 @@
       <workItem from="1547494118773" duration="187000" />
       <workItem from="1547511232319" duration="9759000" />
       <workItem from="1547534113536" duration="7765000" />
-      <workItem from="1547542508365" duration="5772000" />
+      <workItem from="1547542508365" duration="9756000" />
     </task>
     <task id="LOCAL-00001" summary="First commit complete project">
       <created>1546506801642</created>
@@ -657,19 +727,25 @@
       <option name="project" value="LOCAL" />
       <updated>1547544451190</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="fix some bugs">
+      <created>1547549341405</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1547549341405</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="241490000" />
+    <option name="totallyTimeSpent" value="245474000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1839" height="1200" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Web" order="0" side_tool="true" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.19090399" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.19090399" />
       <window_info id="Designer" order="3" />
       <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
@@ -681,7 +757,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="6" weight="0.32960895" />
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" weight="0.32958803" />
-      <window_info anchor="bottom" id="Run" order="9" sideWeight="0.49859628" visible="true" weight="0.35955057" />
+      <window_info active="true" anchor="bottom" id="Run" order="9" sideWeight="0.49859628" visible="true" weight="0.35955057" />
       <window_info anchor="bottom" id="Debug" order="10" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
@@ -689,7 +765,7 @@
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.32917467" />
       <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
       <window_info anchor="bottom" id="File Transfer" order="16" weight="0.32963374" />
-      <window_info anchor="right" id="Database" order="0" weight="0.1841662" />
+      <window_info anchor="right" id="Database" order="0" visible="true" weight="0.1841662" />
       <window_info anchor="right" id="Maven Projects" order="1" weight="0.3296126" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
@@ -749,222 +825,10 @@
     <MESSAGE value="fix some bugs, add activity list, add enter for each user type" />
     <MESSAGE value="fix some bugs, add activity list pane, make some web page for more function complete" />
     <MESSAGE value="add group's main page" />
-    <option name="LAST_COMMIT_MESSAGE" value="add group's main page" />
+    <MESSAGE value="fix some bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix some bugs" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/organization/OrgaEditServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/organization/OrgaLinkListServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/organization/OrgaListServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/organization/OrgaLoadJumpServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/organization/OrgaLoadServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="27" column="53" lean-forward="true" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/organization/OrgaSetServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/controller">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>controller</OriginalElement>
-          <nodes>
-            <node x="628.0" y="605.0">controller.RefuseAppServlet</node>
-            <node x="0.0" y="0.0">controller.AssisDeleServlet</node>
-            <node x="362.0" y="726.0">controller.admin</node>
-            <node x="527.0" y="726.0">controller.user</node>
-            <node x="679.0" y="726.0">controller.tag</node>
-            <node x="0.0" y="121.0">controller.apply.ApplyServlet</node>
-            <node x="0.0" y="726.0">controller.orgaComm</node>
-            <node x="0.0" y="242.0">controller.AssisAddServlet</node>
-            <node x="0.0" y="363.0">controller.apply.ApplyAcceptServlet</node>
-            <node x="0.0" y="484.0">controller.StatisInfoServlet</node>
-            <node x="427.0" y="605.0">controller.organization</node>
-            <node x="193.0" y="726.0">controller.activity</node>
-            <node x="0.0" y="605.0">controller.apply.AgreeAppServlet</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="-62.0" y="220.0" />
-          <SelectedNodes>
-            <node>controller.tag</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Methods</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/organization/OrgaDeleteServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/organization/OrgaSeekServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/com/sun/jmx/interceptor/DefaultMBeanServerInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="818" selection-start-line="818" selection-end-line="818" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/com/sun/jmx/mbeanserver/JmxMBeanServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="800" selection-start-line="800" selection-end-line="800" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/organization/OrgaAddServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="50" column="27" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/tag/TagAddServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/tag/TagListServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/StatisInfoServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/orgaComm/OrgaCommListServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/orgaComm/AddOrgaCommServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/orgaComm/OrgaCommAddServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/apply/AgreeAppServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/apply/ApplyAcceptServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/apply/ApplyServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -976,13 +840,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/admin/OrgaPaneServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
@@ -1014,16 +871,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/orgaComm/DeleteOrgaCommServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1152,13 +999,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/group/js/init.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/group/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1171,12 +1011,165 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/user-info.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/OrgaPane/index.html">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/group/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="81" column="24" lean-forward="true" selection-start-line="81" selection-start-column="24" selection-end-line="81" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/group/js/applyGroup.js">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/OrgaPane/account.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/OrgaPane/acti-addin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-59" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/OrgaPane/acti-com-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-59" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/OrgaPane/acti-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/OrgaPane/apply-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/OrgaPane/group-edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/OrgaPane/member-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/OrgaPane/redirect.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/OrgaPane/groupInfo-edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="93" selection-start-line="93" selection-end-line="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/OrgaPane/groups.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="79" column="22" selection-start-line="79" selection-start-column="22" selection-end-line="79" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/OrgaPane/com-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-423">
+          <caret line="91" column="99" selection-start-line="91" selection-start-column="99" selection-end-line="91" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bean/result/StatisInfoResBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/StatisInfoServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/admin/OrgaPaneServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="55" column="76" lean-forward="true" selection-start-line="55" selection-start-column="76" selection-end-line="55" selection-end-column="76" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-114" />
+        <state relative-caret-position="285">
+          <caret line="111" column="107" lean-forward="true" selection-start-line="111" selection-start-column="107" selection-end-line="111" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/groups.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="29" lean-forward="true" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/js/group_list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="38" column="42" lean-forward="true" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/OrgaPane/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="103" column="131" selection-start-line="103" selection-start-column="131" selection-end-line="103" selection-end-column="131" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://762ade30-15c0-4009-a74d-c8168df1c0f4/schema/group_db/table/sa">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/orgaComm/DeleteOrgaCommServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bean/result/TagResBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/tag/TagAddServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="38" column="30" lean-forward="true" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://762ade30-15c0-4009-a74d-c8168df1c0f4/schema/group_db/table/tag">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/TagDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+        </state>
       </provider>
     </entry>
   </component>

@@ -1455,304 +1455,309 @@ o_id</ColNames>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="355" parent="282" name="FK_Reference_14">
+    <column id="355" parent="282" name="s_id">
+      <Position>4</Position>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="356" parent="282" name="FK_Reference_14">
       <ColNames>t_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="356" parent="282" name="FK_Reference_25">
+    <index id="357" parent="282" name="FK_Reference_25">
       <ColNames>o_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="357" parent="282" name="PRIMARY">
+    <key id="358" parent="282" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>o_t_index</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="358" parent="282" name="FK_Reference_14">
+    <foreign-key id="359" parent="282" name="FK_Reference_14">
       <ColNames>t_id</ColNames>
       <RefSchemaName>group_db</RefSchemaName>
       <RefTableName>tag</RefTableName>
       <RefColNames>t_id</RefColNames>
     </foreign-key>
-    <foreign-key id="359" parent="282" name="FK_Reference_25">
+    <foreign-key id="360" parent="282" name="FK_Reference_25">
       <ColNames>o_id</ColNames>
       <RefSchemaName>group_db</RefSchemaName>
       <RefTableName>organization</RefTableName>
       <RefColNames>o_id</RefColNames>
     </foreign-key>
-    <column id="360" parent="283" name="o_id">
+    <column id="361" parent="283" name="o_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="361" parent="283" name="o_name">
+    <column id="362" parent="283" name="o_name">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="362" parent="283" name="o_create_time">
+    <column id="363" parent="283" name="o_create_time">
       <Position>3</Position>
       <DataType>date|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="363" parent="283" name="o_logo">
+    <column id="364" parent="283" name="o_logo">
       <Position>4</Position>
       <DataType>varchar(100)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="364" parent="283" name="o_description">
+    <column id="365" parent="283" name="o_description">
       <Position>5</Position>
       <DataType>varchar(100)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="365" parent="283" name="PRIMARY">
+    <key id="366" parent="283" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>o_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="366" parent="284" name="s_a_index">
+    <column id="367" parent="284" name="s_a_index">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="367" parent="284" name="ac_id">
+    <column id="368" parent="284" name="ac_id">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="368" parent="284" name="s_id">
+    <column id="369" parent="284" name="s_id">
       <Position>3</Position>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="369" parent="284" name="s_a_comment">
+    <column id="370" parent="284" name="s_a_comment">
       <Position>4</Position>
       <DataType>varchar(100)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="370" parent="284" name="s_a_comment_time">
+    <column id="371" parent="284" name="s_a_comment_time">
       <Position>5</Position>
       <DataType>date|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="371" parent="284" name="FK_Reference_5">
+    <index id="372" parent="284" name="FK_Reference_5">
       <ColNames>ac_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="372" parent="284" name="FK_Reference_8">
+    <index id="373" parent="284" name="FK_Reference_8">
       <ColNames>s_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="373" parent="284" name="PRIMARY">
+    <key id="374" parent="284" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>s_a_index</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="374" parent="284" name="FK_Reference_5">
+    <foreign-key id="375" parent="284" name="FK_Reference_5">
       <ColNames>ac_id</ColNames>
       <RefSchemaName>group_db</RefSchemaName>
       <RefTableName>activity</RefTableName>
       <RefColNames>ac_id</RefColNames>
     </foreign-key>
-    <foreign-key id="375" parent="284" name="FK_Reference_8">
+    <foreign-key id="376" parent="284" name="FK_Reference_8">
       <ColNames>s_id</ColNames>
       <RefSchemaName>group_db</RefSchemaName>
       <RefTableName>stu</RefTableName>
       <RefColNames>s_id</RefColNames>
     </foreign-key>
-    <column id="376" parent="285" name="s_o_index">
+    <column id="377" parent="285" name="s_o_index">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="377" parent="285" name="s_id">
+    <column id="378" parent="285" name="s_id">
       <Position>2</Position>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="378" parent="285" name="o_id">
+    <column id="379" parent="285" name="o_id">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="379" parent="285" name="s_o_comment">
+    <column id="380" parent="285" name="s_o_comment">
       <Position>4</Position>
       <DataType>varchar(100)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="380" parent="285" name="s_o_comment_time">
+    <column id="381" parent="285" name="s_o_comment_time">
       <Position>5</Position>
       <DataType>date|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="381" parent="285" name="FK_Reference_7">
+    <index id="382" parent="285" name="FK_Reference_7">
       <ColNames>s_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="382" parent="285" name="FK_Reference_23">
+    <index id="383" parent="285" name="FK_Reference_23">
       <ColNames>o_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="383" parent="285" name="PRIMARY">
+    <key id="384" parent="285" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>s_o_index</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="384" parent="285" name="FK_Reference_7">
+    <foreign-key id="385" parent="285" name="FK_Reference_7">
       <ColNames>s_id</ColNames>
       <RefSchemaName>group_db</RefSchemaName>
       <RefTableName>stu</RefTableName>
       <RefColNames>s_id</RefColNames>
     </foreign-key>
-    <foreign-key id="385" parent="285" name="FK_Reference_23">
+    <foreign-key id="386" parent="285" name="FK_Reference_23">
       <ColNames>o_id</ColNames>
       <RefSchemaName>group_db</RefSchemaName>
       <RefTableName>organization</RefTableName>
       <RefColNames>o_id</RefColNames>
     </foreign-key>
-    <column id="386" parent="286" name="sa_index">
+    <column id="387" parent="286" name="sa_index">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="387" parent="286" name="s_id">
+    <column id="388" parent="286" name="s_id">
       <Position>2</Position>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="388" parent="286" name="FK_Reference_1">
+    <index id="389" parent="286" name="FK_Reference_1">
       <ColNames>s_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="389" parent="286" name="PRIMARY">
+    <key id="390" parent="286" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>sa_index</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="390" parent="286" name="FK_Reference_1">
+    <foreign-key id="391" parent="286" name="FK_Reference_1">
       <ColNames>s_id</ColNames>
       <RefSchemaName>group_db</RefSchemaName>
       <RefTableName>stu</RefTableName>
       <RefColNames>s_id</RefColNames>
     </foreign-key>
-    <column id="391" parent="287" name="s_id">
+    <column id="392" parent="287" name="s_id">
       <Position>1</Position>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="392" parent="287" name="password">
+    <column id="393" parent="287" name="password">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="393" parent="287" name="s_name">
+    <column id="394" parent="287" name="s_name">
       <Position>3</Position>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="394" parent="287" name="sex">
+    <column id="395" parent="287" name="sex">
       <Position>4</Position>
       <DataType>smallint(6)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="395" parent="287" name="c_id">
+    <column id="396" parent="287" name="c_id">
       <Position>5</Position>
       <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="396" parent="287" name="nickname">
+    <column id="397" parent="287" name="nickname">
       <Position>6</Position>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="397" parent="287" name="email">
+    <column id="398" parent="287" name="email">
       <Position>7</Position>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="398" parent="287" name="FK_Reference_12">
+    <index id="399" parent="287" name="FK_Reference_12">
       <ColNames>c_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="399" parent="287" name="PRIMARY">
+    <key id="400" parent="287" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>s_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="400" parent="287" name="FK_Reference_12">
+    <foreign-key id="401" parent="287" name="FK_Reference_12">
       <ColNames>c_id</ColNames>
       <RefSchemaName>group_db</RefSchemaName>
       <RefTableName>college</RefTableName>
       <RefColNames>c_id</RefColNames>
     </foreign-key>
-    <column id="401" parent="288" name="t_id">
+    <column id="402" parent="288" name="t_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="402" parent="288" name="t_name">
+    <column id="403" parent="288" name="t_name">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="403" parent="288" name="PRIMARY">
+    <key id="404" parent="288" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>t_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="404" parent="289" name="user_index">
+    <column id="405" parent="289" name="user_index">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="405" parent="289" name="nickname">
+    <column id="406" parent="289" name="nickname">
       <Position>2</Position>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="406" parent="289" name="s_id">
+    <column id="407" parent="289" name="s_id">
       <Position>3</Position>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="407" parent="289" name="classroom">
+    <column id="408" parent="289" name="classroom">
       <Position>4</Position>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="408" parent="289" name="photo">
+    <column id="409" parent="289" name="photo">
       <Position>5</Position>
       <DataType>varchar(100)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="409" parent="289" name="usersign">
+    <column id="410" parent="289" name="usersign">
       <Position>6</Position>
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="410" parent="289" name="FK_Reference_22">
+    <index id="411" parent="289" name="FK_Reference_22">
       <ColNames>s_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="411" parent="289" name="PRIMARY">
+    <key id="412" parent="289" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>user_index</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="412" parent="289" name="FK_Reference_22">
+    <foreign-key id="413" parent="289" name="FK_Reference_22">
       <ColNames>s_id</ColNames>
       <RefSchemaName>group_db</RefSchemaName>
       <RefTableName>stu</RefTableName>
